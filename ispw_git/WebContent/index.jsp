@@ -9,7 +9,7 @@
 <body>
 	<h1>hello world!</h1>
 	<a href="calliope.jsp" >calliope</a>
-	<a href="www,google.com">google.com</a>
+	<a href="www.google.com">google.com</a>
 	<div>
 		Sto facendo le modifiche attraverso il pc @erato<br />
 		Non riesco a sincronizzare tutti i pc sulle stesse modifiche!
