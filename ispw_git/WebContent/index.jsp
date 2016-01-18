@@ -16,5 +16,6 @@
 		riesco a notificare le modifiche agli altri pc! Devo forse creare
 		altri branch? uno per ogni PC?
 	</div>
+	<div>Ora sto apportando le modifiche al codice attraverso il branch @master</div>
 </body>
 </html>
