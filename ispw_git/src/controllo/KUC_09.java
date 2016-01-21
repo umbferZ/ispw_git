@@ -1,6 +1,8 @@
 package controllo;
 
 import java.util.*;
+
+import UC_09.dominio.ListaPagamenti;
 import dominio.*;
 
 /**
@@ -25,6 +27,14 @@ public class KUC_09 {
 		Prenotazione prenotazione = new Prenotazione(struttura, periodo);
 		this.user.getCarrello().addPrenotazione(prenotazione);
 		System.out.println("COMPLIMENTI!\nhai aggiunto una nuova struttura al tuo carrello");
+	}
+	
+	/**
+	 * 
+	 */
+	public ListaPagamenti getListaPagamenti() {
+		return null;
+		// TODO implement here
 	}
 
 }

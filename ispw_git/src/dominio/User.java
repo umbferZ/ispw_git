@@ -12,7 +12,7 @@ public class User {
 	 * Default constructor
 	 */
 	public User() {
-		this.carrello=new Carrello();
+		this.carrello = new Carrello();
 	}
 
 	/**
