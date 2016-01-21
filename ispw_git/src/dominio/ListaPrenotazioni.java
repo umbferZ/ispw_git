@@ -27,11 +27,12 @@ public class ListaPrenotazioni {
 
 	public ListaPagamenti generaListaPagamenti() {
 		// TODO implement here
-		ListaPagamenti list= new ListaPagamenti();
-		for (int i=0; i<this.listPrenotazioni.size(); i++){
-			listPrenotazioni.get(i);
+		ListaPagamenti list = new ListaPagamenti();
+		for (int i = 0; i < this.listPrenotazioni.size(); i++) {
+			Pagamento total = listPrenotazioni.get(i).generaPagamento();
+			list.addPagamento(total);
 		}
-		return null;
+		return list;
 	}
 
 }

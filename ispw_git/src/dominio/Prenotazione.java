@@ -16,8 +16,8 @@ public class Prenotazione {
 	/**
 	 * 
 	 */
-	public Periodo periodo;
-	public Struttura struttura;
+	private Periodo periodo;
+	private Struttura struttura;
 
 	/**
 	 * @param struttura
@@ -30,7 +30,7 @@ public class Prenotazione {
 		// TODO implement here
 	}
 
-	public Money GetCosto(){
+	public Money getCosto(){
     	return this.struttura.getTotal();
     }
 

@@ -2,7 +2,6 @@ package controllo;
 
 import java.util.*;
 
-import UC_09.dominio.ListaPagamenti;
 import dominio.*;
 
 /**
