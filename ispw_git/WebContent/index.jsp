@@ -7,6 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
+	<h1>haywu</h1>
 	<h1>index.jsp</h1>
 	<div>
 		<form id="first" action="response.jsp" method="post">
