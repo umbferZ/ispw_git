@@ -11,26 +11,22 @@
 </head>
 <body>
 	<h1>index.jsp</h1>
-	<div style="background-color: #00ffff">lista struttura</div>
-
 	<%
 		String s = "";
 		for (int i = 0; i < 10; i++) {
 			s = "";
-			s += "<div style=\"background-color: #00ff00\">";
-			s += "<form id=\"addCarrello\" action=\"addCarrello.jsp\" method=\"post\">";
-			s += "<div>Struttura " + i + ", prezzo: 100€</div>";
+			s += "\n<div >";
+			s += "<form id=\"addCarrello\" action=\"carrello.jsp\" method=\"post\">";
+			s += "<span>Struttura " + i + ", prezzo: 100€ </span>";
 			s += "<input type=\"hidden\" name=\"struttura\" value=\"" + i + "\">";
-			s += "<input type=\"date\" name=\"start\" id=\"start\" /> <label for=\"start\">start</label>";
-			s += "<input type=\"date\" name=\"end\" id=\"end\" /> <label for=\"end\">end</label>";
+			s += "<label for=\"start\">start</label> <input type=\"date\" name=\"start\" id=\"start\" />";
+			s += "<label for=\"end\">end</label> <input type=\"date\" name=\"end\" id=\"end\" /> ";
 			s += "<input type=\"submit\" name=\"addCarrello\" value=\"aggiungi al carrello\"/>";
 			s += "</form>";
-			s += "</div>";
-			System.out.println(s);
+			s += "</div>\n<br />";
 			out.print(s);
 
 		}
 	%>
-
 </body>
 </html>

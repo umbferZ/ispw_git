@@ -26,6 +26,7 @@ public class Prenotazione {
      * @param periodo
      */
     public Prenotazione(Struttura struttura, Periodo periodo) {
+    	
         // TODO implement here
     }
 

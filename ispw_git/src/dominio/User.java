@@ -7,23 +7,28 @@ import java.util.*;
  */
 public class User {
 
-    /**
-     * Default constructor
-     */
-    public User() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public User() {
+	}
 
-    /**
-     * 
-     */
-    public Carrello carrello;
+	/**
+	 * 
+	 */
+	private Carrello carrello;
 
-    /**
-     * 
-     */
-    public ListaDesideri listaDesideri;
+	/**
+	 * 
+	 */
+	private ListaDesideri listaDesideri;
 
+	public void setCarrello(Carrello carrello) {
+		this.carrello = carrello;
+	}
 
-
+	public Carrello getCarrello() {
+		return this.carrello;
+	}
 
 }

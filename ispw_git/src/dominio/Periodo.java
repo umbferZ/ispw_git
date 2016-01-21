@@ -7,29 +7,30 @@ import java.util.*;
  */
 public class Periodo {
 
-    /**
-     * Default constructor
-     */
-    public Periodo() {
-    }
+	/**
+	 * Default constructor
+	 */
+	public Periodo() {
+	}
 
-    /**
-     * 
-     */
-    private Date start;
+	/**
+	 * 
+	 */
+	private Date start;
 
-    /**
-     * 
-     */
-    private Date end;
+	/**
+	 * 
+	 */
+	private Date end;
 
-
-    /**
-     * @param start 
-     * @param end
-     */
-    public void Periodo(Date start, Date end) {
-        // TODO implement here
-    }
+	/**
+	 * @param start
+	 * @param end
+	 */
+	public Periodo(Date start, Date end) {
+		this.start = start;
+		this.end = end;
+		// TODO implement here
+	}
 
 }
