@@ -31,6 +31,7 @@ public class Prenotazione {
 	}
 
 	public Money getCosto() {
+		//nuovo commento
 		return this.struttura.getTotal();
 	}
 
