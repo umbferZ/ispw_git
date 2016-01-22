@@ -13,41 +13,29 @@ public class Pagamento {
 	public Pagamento() {
 	}
 
-	/**
-	 * 
-	 */
-	private User ricevente;
-
-	/**
-	 * 
-	 */
 	private Money costo;
 
-	/**
-	 * 
-	 */
 	private String causale;
 
-
+	private Locatore locatore;
 
 	/**
-	 * @param ricevente 
-	 * @param costo 
+	 * @param ricevente
+	 * @param costo
 	 * @param causale
 	 */
 	public Pagamento(Locatore ricevente, Money costo, String causale) {
-		// TODO implement here
+		this.costo = costo;
+		this.causale = causale;
+		this.locatore = locatore;
 	}
 
 	/**
-	 * @param ricevent 
+	 * @param ricevente
 	 * @param costo
 	 */
-	public Pagamento(Locatore ricevent, Money costo) {
-		// TODO implement here
+	public Pagamento(Locatore ricevente, Money costo) {
+		this(ricevente, costo, "");
 	}
-
-
-
 
 }

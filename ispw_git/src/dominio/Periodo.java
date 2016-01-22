@@ -30,7 +30,6 @@ public class Periodo {
 	public Periodo(Date start, Date end) {
 		this.start = start;
 		this.end = end;
-		// TODO implement here
 	}
 
 }

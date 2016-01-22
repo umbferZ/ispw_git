@@ -11,19 +11,20 @@ public class ListaPagamenti {
 	 * Default constructor
 	 */
 	public ListaPagamenti() {
+		this.listaPagamenti= new ArrayList<Pagamento>();
 	}
 
 	/**
 	 * 
 	 */
-	private List<Pagamento> listaPagamenti;
+	private ArrayList<Pagamento> listaPagamenti;
 
 
 	/**
 	 * @param pagamento
 	 */
 	public void addPagamento(Pagamento pagamento) {
-		// TODO implement here
+		listaPagamenti.add(pagamento);
 	}
 
 }

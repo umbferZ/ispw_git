@@ -15,14 +15,7 @@ public class User {
 		this.carrello = new Carrello();
 	}
 
-	/**
-	 * 
-	 */
 	private Carrello carrello;
-
-	/**
-	 * 
-	 */
 	private ListaDesideri listaDesideri;
 
 	public void setCarrello(Carrello carrello) {

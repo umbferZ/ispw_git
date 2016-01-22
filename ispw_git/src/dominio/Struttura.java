@@ -10,33 +10,29 @@ public class Struttura {
 	/**
 	 * Default constructor
 	 */
-	public Struttura() {
+	public Struttura(int code) {
+		this.costo = new Money();
+		this.listaServizi = new ArrayList<Servizio>();
+		this.locatore = new Locatore();
+		for (int i = 0; i < 10; i++) {
+			Servizio s = new Servizio();
+			listaServizi.add(s);
+		}
+		System.out.println("dimensione " + this.listaServizi.size());
 	}
 
-	/**
-	 * 
-	 */
 	private Money costo;
 
-	/**
-	 * 
-	 */
-	private List<Servizio> listaServizi;
+	private ArrayList<Servizio> listaServizi;
 
-	/**
-	 * 
-	 */
 	private String name;
 
-
-
-
-
+	private Locatore locatore;
 
 	/**
 	 * @param code
 	 */
-	public Struttura(int code) {
+	public Struttura() {
 		// TODO implement here
 	}
 
@@ -44,16 +40,19 @@ public class Struttura {
 	 * @return
 	 */
 	public Locatore getLocatore() {
-		// TODO implement here
-		return null;
+		return locatore;
 	}
 
 	/**
 	 * @return
 	 */
 	public Money getTotal() {
-		// TODO implement here
-		return null;
+		Money m = new Money();
+		m.addMoney(costo);		
+		for (int i = 0; i < listaServizi.size(); i++) {
+			m.addMoney(listaServizi.get(i).getCosto());
+		}
+		return m;
 	}
 
 }
