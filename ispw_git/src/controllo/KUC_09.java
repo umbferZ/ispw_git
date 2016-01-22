@@ -54,7 +54,7 @@ public class KUC_09 {
 		KUC_09 controller = new KUC_09(user);
 		System.out.println("Aggiungo struttura nel carrello...");
 		controller.addCarrello(start, end, code);
-		System.out.println("\fatto!");
+		System.out.println("\tfatto!");
 		System.out.println("Generazione lista pagamenti...");
 		controller.generaListaPagamenti();
 		System.out.println("\tfatto!");
