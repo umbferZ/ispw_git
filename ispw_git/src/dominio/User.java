@@ -13,8 +13,10 @@ public class User {
 	 */
 	public User() {
 		this.carrello = new Carrello();
+		this.name = "name_user";
 	}
 
+	private String name;
 	private Carrello carrello;
 	private ListaDesideri listaDesideri;
 
@@ -24,6 +26,10 @@ public class User {
 
 	public Carrello getCarrello() {
 		return this.carrello;
+	}
+
+	public String getName() {
+		return name;
 	}
 
 }

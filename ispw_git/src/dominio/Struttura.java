@@ -18,7 +18,8 @@ public class Struttura {
 			Servizio s = new Servizio();
 			listaServizi.add(s);
 		}
-		System.out.println("dimensione " + this.listaServizi.size());
+		this.name = String.format("Struttura_%d", code);
+				
 	}
 
 	private Money costo;
@@ -48,11 +49,15 @@ public class Struttura {
 	 */
 	public Money getTotal() {
 		Money m = new Money();
-		m.addMoney(costo);		
+		m.addMoney(costo);
 		for (int i = 0; i < listaServizi.size(); i++) {
 			m.addMoney(listaServizi.get(i).getCosto());
 		}
 		return m;
+	}
+
+	public String getName() {
+		return name;
 	}
 
 }

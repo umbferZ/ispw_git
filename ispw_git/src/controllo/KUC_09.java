@@ -25,7 +25,6 @@ public class KUC_09 {
 		Struttura struttura = new Struttura(code);
 		Prenotazione prenotazione = new Prenotazione(struttura, periodo);
 		this.user.getCarrello().addPrenotazione(prenotazione);
-		System.out.println("COMPLIMENTI!\nhai aggiunto una nuova struttura al tuo carrello");
 	}
 
 	/**

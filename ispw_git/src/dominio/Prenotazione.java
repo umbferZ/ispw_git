@@ -29,6 +29,10 @@ public class Prenotazione {
 
 		// TODO implement here
 	}
+	
+	public Struttura getStruttura(){
+		return this.struttura;
+	}
 
 	public Money getCosto() {
 		//nuovo commento

@@ -1,4 +1,4 @@
-<%@page import="dominio.User"%>
+<%@page import="dominio.*"%>
 <%@page import="controllo.KUC_09"%>
 <%@page import="java.util.Date"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
@@ -10,15 +10,31 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<h1>Response.jsp</h1>
+	<h1>Carrello</h1>
 	<%
-		int code = (int) Integer.parseInt(request.getParameter("struttura"));
-		Date start = new Date(request.getParameter("start"));
-		Date end = new Date(request.getParameter("end"));
-		User user = new User();
-		KUC_09 controller = new KUC_09(user);
-		controller.addCarrello(start, end, code);
-		/* out.print(controller.addCarrello(start, end, code)); */
+		User user = (User) session.getAttribute("user");
+		if (request.getParameter("addCarrello") != null) {
+			int code = (int) Integer.parseInt(request.getParameter("struttura"));
+			Date start = new Date(request.getParameter("start"));
+			Date end = new Date(request.getParameter("end"));
+			KUC_09 controller = new KUC_09(user);
+			controller.addCarrello(start, end, code);
 	%>
+	<h1><%=user.getName()%></h1>
+	<pre> nel tuo carrello sono presenti: <%=user.getCarrello().getListPrenotazioni().size()%> prenotaizoni	</pre>
+	<%
+		for (int i = 0; i < user.getCarrello().getListPrenotazioni().size(); i++) {
+				out.print("<pre>");
+				out.print("nome della struttura: "
+						+ user.getCarrello().getListPrenotazioni().get(i).getStruttura().getName() + "\n");
+				out.print("costo della struttura: "
+						+ user.getCarrello().getListPrenotazioni().get(i).getCosto().getValore() + "\n");
+				out.print("</pre>");
+			}
+		}
+	%>
+	<form action="pagamenti.jsp" method="post">
+		<input type="submit" value="Procedi al pagamento" name="pay" />
+	</form>
 </body>
 </html>
