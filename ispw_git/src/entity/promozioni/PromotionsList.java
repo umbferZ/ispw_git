@@ -1,7 +1,8 @@
 package entity.promozioni;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The Class PromotionsList.
@@ -21,7 +22,8 @@ public class PromotionsList implements Serializable {
     /**
      * Adds the promotion.
      *
-     * @param promotion the promotion
+     * @param promotion
+     *            the promotion
      */
     public void addPromotion(Promotion promotion) {
 	this.promotionsList.add(promotion);
@@ -30,7 +32,8 @@ public class PromotionsList implements Serializable {
     /**
      * Delete promotion.
      *
-     * @param promotion the promotion
+     * @param promotion
+     *            the promotion
      */
     public void deletePromotion(Promotion promotion) {
 	this.promotionsList.remove(promotion);
@@ -48,7 +51,8 @@ public class PromotionsList implements Serializable {
     /**
      * Sets the promotions list.
      *
-     * @param promotionsList the new promotions list
+     * @param promotionsList
+     *            the new promotions list
      */
     public void setPromotionsList(List<Promotion> promotionsList) {
 	this.promotionsList = promotionsList;

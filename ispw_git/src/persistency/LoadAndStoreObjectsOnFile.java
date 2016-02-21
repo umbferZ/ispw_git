@@ -1,6 +1,11 @@
 package persistency;
 
-import java.io.*;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 import java.io.Serializable;
 
 /**
@@ -13,7 +18,8 @@ public class LoadAndStoreObjectsOnFile implements Serializable {
     /**
      * Instantiates a new load and store objects on file.
      *
-     * @param path the path
+     * @param path
+     *            the path
      */
     public LoadAndStoreObjectsOnFile(String path) {
 	this.path = path;
@@ -41,7 +47,8 @@ public class LoadAndStoreObjectsOnFile implements Serializable {
     /**
      * Store object.
      *
-     * @param obj the obj
+     * @param obj
+     *            the obj
      */
     public void storeObject(Object obj) {
 

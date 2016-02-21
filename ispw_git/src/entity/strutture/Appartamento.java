@@ -16,19 +16,32 @@ public class Appartamento extends StrutturaPrivata {
     /**
      * Instantiates a new appartamento.
      *
-     * @param id_struttura the id_struttura
-     * @param nome the nome
-     * @param regione the regione
-     * @param citta the citta
-     * @param comune the comune
-     * @param via the via
-     * @param numCivic the num civic
-     * @param CAP the cap
-     * @param descrizione the descrizione
-     * @param locatore the locatore
-     * @param numCamere the num camere
-     * @param numBagni the num bagni
-     * @param prezzo the prezzo
+     * @param id_struttura
+     *            the id_struttura
+     * @param nome
+     *            the nome
+     * @param regione
+     *            the regione
+     * @param citta
+     *            the citta
+     * @param comune
+     *            the comune
+     * @param via
+     *            the via
+     * @param numCivic
+     *            the num civic
+     * @param CAP
+     *            the cap
+     * @param descrizione
+     *            the descrizione
+     * @param locatore
+     *            the locatore
+     * @param numCamere
+     *            the num camere
+     * @param numBagni
+     *            the num bagni
+     * @param prezzo
+     *            the prezzo
      */
     public Appartamento(int id_struttura, String nome, String regione, String citta, String comune, String via,
 	    String numCivic, String CAP, String descrizione, Locatore locatore, int numCamere, int numBagni,
@@ -66,7 +79,9 @@ public class Appartamento extends StrutturaPrivata {
 	return prezzo;
     }
 
-    /* (non-Javadoc)
+    /*
+     * (non-Javadoc)
+     * 
      * @see entity.strutture.StrutturaPrivata#serializza()
      */
     @Override
@@ -77,7 +92,8 @@ public class Appartamento extends StrutturaPrivata {
     /**
      * Sets the num bagni.
      *
-     * @param numBagni the new num bagni
+     * @param numBagni
+     *            the new num bagni
      */
     public void setNumBagni(int numBagni) {
 	this.numBagni = numBagni;
@@ -86,7 +102,8 @@ public class Appartamento extends StrutturaPrivata {
     /**
      * Sets the num camere.
      *
-     * @param numCamere the new num camere
+     * @param numCamere
+     *            the new num camere
      */
     public void setNumCamere(int numCamere) {
 	this.numCamere = numCamere;
@@ -95,7 +112,8 @@ public class Appartamento extends StrutturaPrivata {
     /**
      * Sets the prezzo.
      *
-     * @param prezzo the new prezzo
+     * @param prezzo
+     *            the new prezzo
      */
     public void setPrezzo(double prezzo) {
 	this.prezzo = prezzo;

@@ -3,8 +3,8 @@ package entity.strutture;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import persistency.DAO;
 import entity.persone.Locatore;
+import persistency.DAO;
 
 /**
  * The Class Struttura.
@@ -23,16 +23,26 @@ public abstract class Struttura {
     /**
      * Instantiates a new struttura.
      *
-     * @param id_struttura the id_struttura
-     * @param nome the nome
-     * @param regione the regione
-     * @param citta the citta
-     * @param comune the comune
-     * @param via the via
-     * @param numCivic the num civic
-     * @param CAP the cap
-     * @param descrizione the descrizione
-     * @param locatore the locatore
+     * @param id_struttura
+     *            the id_struttura
+     * @param nome
+     *            the nome
+     * @param regione
+     *            the regione
+     * @param citta
+     *            the citta
+     * @param comune
+     *            the comune
+     * @param via
+     *            the via
+     * @param numCivic
+     *            the num civic
+     * @param CAP
+     *            the cap
+     * @param descrizione
+     *            the descrizione
+     * @param locatore
+     *            the locatore
      */
     public Struttura(int id_struttura, String nome, String regione, String citta, String comune, String via,
 	    String numCivic, String CAP, String descrizione, Locatore locatore) {
@@ -91,7 +101,7 @@ public abstract class Struttura {
     /**
      * Reperisci id struttura.
      *
-     * @return the int
+     * @return int
      */
     public int reperisciIDStruttura() {
 	ResultSet rs = DAO.getInstance().dbQuery("", ""); // reperisci l'id
@@ -148,7 +158,8 @@ public abstract class Struttura {
     /**
      * Sets the descrizione.
      *
-     * @param descrizione the new descrizione
+     * @param descrizione
+     *            the new descrizione
      */
     public void setDescrizione(String descrizione) {
 	this.descrizione = descrizione;
@@ -157,7 +168,8 @@ public abstract class Struttura {
     /**
      * Sets the id_struttura.
      *
-     * @param id_struttura the new id_struttura
+     * @param id_struttura
+     *            the new id_struttura
      */
     public void setId_struttura(int id_struttura) {
 	this.id_struttura = id_struttura;
@@ -166,7 +178,8 @@ public abstract class Struttura {
     /**
      * Sets the indirizzo.
      *
-     * @param indirizzo the new indirizzo
+     * @param indirizzo
+     *            the new indirizzo
      */
     public void setIndirizzo(Indirizzo indirizzo) {
 	this.indirizzo = indirizzo;
@@ -175,7 +188,8 @@ public abstract class Struttura {
     /**
      * Sets the locatore.
      *
-     * @param locatore the new locatore
+     * @param locatore
+     *            the new locatore
      */
     public void setLocatore(Locatore locatore) {
 	this.locatore = locatore;
@@ -184,7 +198,8 @@ public abstract class Struttura {
     /**
      * Sets the nome.
      *
-     * @param nome the new nome
+     * @param nome
+     *            the new nome
      */
     public void setNome(String nome) {
 	this.nome = nome;

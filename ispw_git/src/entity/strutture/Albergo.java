@@ -1,6 +1,7 @@
 package entity.strutture;
 
 import java.io.Serializable;
+
 import entity.persone.Locatore;
 import persistency.DAO;
 
@@ -18,24 +19,42 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Instantiates a new albergo.
      *
-     * @param id_struttura the id_struttura
-     * @param nome the nome
-     * @param regione the regione
-     * @param citta the citta
-     * @param comune the comune
-     * @param via the via
-     * @param numCivic the num civic
-     * @param CAP the cap
-     * @param descrizione the descrizione
-     * @param locatore the locatore
-     * @param stelle the stelle
-     * @param camereTotali the camere totali
-     * @param numSingole the num singole
-     * @param numMatrimoniali the num matrimoniali
-     * @param numTriple the num triple
-     * @param prezzoSingole the prezzo singole
-     * @param prezzoMatrimoniali the prezzo matrimoniali
-     * @param prezzoTriple the prezzo triple
+     * @param id_struttura
+     *            the id_struttura
+     * @param nome
+     *            the nome
+     * @param regione
+     *            the regione
+     * @param citta
+     *            the citta
+     * @param comune
+     *            the comune
+     * @param via
+     *            the via
+     * @param numCivic
+     *            the num civic
+     * @param CAP
+     *            the cap
+     * @param descrizione
+     *            the descrizione
+     * @param locatore
+     *            the locatore
+     * @param stelle
+     *            the stelle
+     * @param camereTotali
+     *            the camere totali
+     * @param numSingole
+     *            the num singole
+     * @param numMatrimoniali
+     *            the num matrimoniali
+     * @param numTriple
+     *            the num triple
+     * @param prezzoSingole
+     *            the prezzo singole
+     * @param prezzoMatrimoniali
+     *            the prezzo matrimoniali
+     * @param prezzoTriple
+     *            the prezzo triple
      */
     public Albergo(int id_struttura, String nome, String regione, String citta, String comune, String via,
 	    String numCivic, String CAP, String descrizione, Locatore locatore, String stelle, int camereTotali,
@@ -124,7 +143,9 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
 	return stelle;
     }
 
-    /* (non-Javadoc)
+    /*
+     * (non-Javadoc)
+     * 
      * @see entity.strutture.StrutturaAlberghiera#serializza()
      */
     @Override
@@ -173,7 +194,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the camere totali.
      *
-     * @param camereTotali the new camere totali
+     * @param camereTotali
+     *            the new camere totali
      */
     public void setCamereTotali(int camereTotali) {
 	this.camereTotali = camereTotali;
@@ -182,7 +204,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the num matrimoniali.
      *
-     * @param numMatrimoniali the new num matrimoniali
+     * @param numMatrimoniali
+     *            the new num matrimoniali
      */
     public void setNumMatrimoniali(int numMatrimoniali) {
 	this.numMatrimoniali = numMatrimoniali;
@@ -191,7 +214,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the num singole.
      *
-     * @param numSingole the new num singole
+     * @param numSingole
+     *            the new num singole
      */
     public void setNumSingole(int numSingole) {
 	this.numSingole = numSingole;
@@ -200,7 +224,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the num triple.
      *
-     * @param numTriple the new num triple
+     * @param numTriple
+     *            the new num triple
      */
     public void setNumTriple(int numTriple) {
 	this.numTriple = numTriple;
@@ -209,7 +234,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the prezzo matrimoniali.
      *
-     * @param prezzoMatrimoniali the new prezzo matrimoniali
+     * @param prezzoMatrimoniali
+     *            the new prezzo matrimoniali
      */
     public void setPrezzoMatrimoniali(double prezzoMatrimoniali) {
 	this.prezzoMatrimoniali = prezzoMatrimoniali;
@@ -218,7 +244,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the prezzo singole.
      *
-     * @param prezzoSingole the new prezzo singole
+     * @param prezzoSingole
+     *            the new prezzo singole
      */
     public void setPrezzoSingole(double prezzoSingole) {
 	this.prezzoSingole = prezzoSingole;
@@ -227,7 +254,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the prezzo triple.
      *
-     * @param prezzoTriple the new prezzo triple
+     * @param prezzoTriple
+     *            the new prezzo triple
      */
     public void setPrezzoTriple(double prezzoTriple) {
 	this.prezzoTriple = prezzoTriple;
@@ -236,7 +264,8 @@ public class Albergo extends StrutturaAlberghiera implements Serializable {
     /**
      * Sets the stelle.
      *
-     * @param stelle the new stelle
+     * @param stelle
+     *            the new stelle
      */
     public void setStelle(String stelle) {
 	this.stelle = stelle;

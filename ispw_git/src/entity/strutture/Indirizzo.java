@@ -38,12 +38,18 @@ public class Indirizzo {
     /**
      * Instantiates a new indirizzo.
      *
-     * @param regione the regione
-     * @param citta the citta
-     * @param comune the comune
-     * @param via the via
-     * @param numCivic the num civic
-     * @param CAP the cap
+     * @param regione
+     *            the regione
+     * @param citta
+     *            the citta
+     * @param comune
+     *            the comune
+     * @param via
+     *            the via
+     * @param numCivic
+     *            the num civic
+     * @param CAP
+     *            the cap
      */
     public Indirizzo(String regione, String citta, String comune, String via, String numCivic, String CAP) {
 	super();
@@ -112,7 +118,8 @@ public class Indirizzo {
     /**
      * Sets the cap.
      *
-     * @param cAP the new cap
+     * @param cAP
+     *            the new cap
      */
     public void setCAP(String cAP) {
 	CAP = cAP;
@@ -121,7 +128,8 @@ public class Indirizzo {
     /**
      * Sets the città.
      *
-     * @param città the new città
+     * @param città
+     *            the new città
      */
     public void setCittà(String città) {
 	this.citta = città;
@@ -130,7 +138,8 @@ public class Indirizzo {
     /**
      * Sets the comune.
      *
-     * @param comune the new comune
+     * @param comune
+     *            the new comune
      */
     public void setComune(String comune) {
 	this.comune = comune;
@@ -139,7 +148,8 @@ public class Indirizzo {
     /**
      * Sets the num civic.
      *
-     * @param numCivic the new num civic
+     * @param numCivic
+     *            the new num civic
      */
     public void setNumCivic(String numCivic) {
 	this.numCivic = numCivic;
@@ -148,7 +158,8 @@ public class Indirizzo {
     /**
      * Sets the regione.
      *
-     * @param regione the new regione
+     * @param regione
+     *            the new regione
      */
     public void setRegione(String regione) {
 	this.regione = regione;
@@ -157,7 +168,8 @@ public class Indirizzo {
     /**
      * Sets the via.
      *
-     * @param via the new via
+     * @param via
+     *            the new via
      */
     public void setVia(String via) {
 	this.via = via;

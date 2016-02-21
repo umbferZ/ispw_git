@@ -14,19 +14,32 @@ public class Residence extends StrutturaAlberghiera {
     /**
      * Instantiates a new residence.
      *
-     * @param id_struttura the id_struttura
-     * @param nome the nome
-     * @param regione the regione
-     * @param citta the citta
-     * @param comune the comune
-     * @param via the via
-     * @param numCivic the num civic
-     * @param CAP the cap
-     * @param descrizione the descrizione
-     * @param locatore the locatore
-     * @param prezzo the prezzo
-     * @param appartamentiTotali the appartamenti totali
-     * @param appartamentiDisponibili the appartamenti disponibili
+     * @param id_struttura
+     *            the id_struttura
+     * @param nome
+     *            the nome
+     * @param regione
+     *            the regione
+     * @param citta
+     *            the citta
+     * @param comune
+     *            the comune
+     * @param via
+     *            the via
+     * @param numCivic
+     *            the num civic
+     * @param CAP
+     *            the cap
+     * @param descrizione
+     *            the descrizione
+     * @param locatore
+     *            the locatore
+     * @param prezzo
+     *            the prezzo
+     * @param appartamentiTotali
+     *            the appartamenti totali
+     * @param appartamentiDisponibili
+     *            the appartamenti disponibili
      */
     public Residence(int id_struttura, String nome, String regione, String citta, String comune, String via,
 	    String numCivic, String CAP, String descrizione, Locatore locatore, double prezzo, int appartamentiTotali,
@@ -64,7 +77,9 @@ public class Residence extends StrutturaAlberghiera {
 	return prezzo;
     }
 
-    /* (non-Javadoc)
+    /*
+     * (non-Javadoc)
+     * 
      * @see entity.strutture.StrutturaAlberghiera#serializza()
      */
     @Override
@@ -75,7 +90,8 @@ public class Residence extends StrutturaAlberghiera {
     /**
      * Sets the appartamenti disponibili.
      *
-     * @param appartamentiDisponibili the new appartamenti disponibili
+     * @param appartamentiDisponibili
+     *            the new appartamenti disponibili
      */
     public void setAppartamentiDisponibili(int appartamentiDisponibili) {
 	this.appartamentiDisponibili = appartamentiDisponibili;
@@ -84,7 +100,8 @@ public class Residence extends StrutturaAlberghiera {
     /**
      * Sets the appartamenti totali.
      *
-     * @param appartamentiTotali the new appartamenti totali
+     * @param appartamentiTotali
+     *            the new appartamenti totali
      */
     public void setAppartamentiTotali(int appartamentiTotali) {
 	this.appartamentiTotali = appartamentiTotali;
@@ -93,7 +110,8 @@ public class Residence extends StrutturaAlberghiera {
     /**
      * Sets the prezzo.
      *
-     * @param prezzo the new prezzo
+     * @param prezzo
+     *            the new prezzo
      */
     public void setPrezzo(double prezzo) {
 	this.prezzo = prezzo;

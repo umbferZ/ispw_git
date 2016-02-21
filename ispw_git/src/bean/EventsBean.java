@@ -1,7 +1,8 @@
 package bean;
 
-import control.EventsControl;
 import java.util.Date;
+
+import control.EventsControl;
 
 /**
  * The Class EventsBean.
@@ -86,7 +87,8 @@ public class EventsBean {
     /**
      * Sets the citta.
      *
-     * @param citta the new citta
+     * @param citta
+     *            the new citta
      */
     public void setCitta(String citta) {
 	this.citta = citta;
@@ -95,7 +97,8 @@ public class EventsBean {
     /**
      * Sets the date.
      *
-     * @param date the new date
+     * @param date
+     *            the new date
      */
     public void setDate(Date date) {
 	this.date = date;
@@ -104,7 +107,8 @@ public class EventsBean {
     /**
      * Sets the descrizione.
      *
-     * @param descrizione the new descrizione
+     * @param descrizione
+     *            the new descrizione
      */
     public void setDescrizione(String descrizione) {
 	this.descrizione = descrizione;
@@ -113,7 +117,8 @@ public class EventsBean {
     /**
      * Sets the luogo.
      *
-     * @param luogo the new luogo
+     * @param luogo
+     *            the new luogo
      */
     public void setLuogo(String luogo) {
 	this.luogo = luogo;
@@ -122,7 +127,8 @@ public class EventsBean {
     /**
      * Sets the nome.
      *
-     * @param nome the new nome
+     * @param nome
+     *            the new nome
      */
     public void setNome(String nome) {
 	this.nome = nome;
@@ -131,7 +137,8 @@ public class EventsBean {
     /**
      * Sets the orario.
      *
-     * @param orario the new orario
+     * @param orario
+     *            the new orario
      */
     public void setOrario(String orario) {
 	this.orario = orario;

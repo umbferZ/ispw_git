@@ -1,9 +1,9 @@
 package bean;
 
-import control.PaymentControl;
-
 import java.io.Serializable;
 import java.util.ArrayList;
+
+import control.PaymentControl;
 
 /**
  * The Class PaymentBean.
@@ -80,7 +80,8 @@ public class PaymentBean implements Serializable {
     /**
      * Sets the ccv.
      *
-     * @param ccv the new ccv
+     * @param ccv
+     *            the new ccv
      */
     public void setCcv(int ccv) {
 	this.ccv = ccv;
@@ -89,7 +90,8 @@ public class PaymentBean implements Serializable {
     /**
      * Sets the list.
      *
-     * @param list the new list
+     * @param list
+     *            the new list
      */
     public void setList(ArrayList<BeanGestioneStrutture> list) {
 	this.list = list;
@@ -98,7 +100,8 @@ public class PaymentBean implements Serializable {
     /**
      * Sets the name.
      *
-     * @param name the new name
+     * @param name
+     *            the new name
      */
     public void setName(String name) {
 	this.name = name;
@@ -107,7 +110,8 @@ public class PaymentBean implements Serializable {
     /**
      * Sets the number.
      *
-     * @param number the new number
+     * @param number
+     *            the new number
      */
     public void setNumber(int number) {
 	this.number = number;

@@ -32,13 +32,20 @@ public class BeanGestioneStrutture {
     /**
      * Instantiates a new bean gestione strutture.
      *
-     * @param via the via
-     * @param nome the nome
-     * @param checkin the checkin
-     * @param checkout the checkout
-     * @param servizi the servizi
-     * @param prezzo the prezzo
-     * @param camere the camere
+     * @param via
+     *            the via
+     * @param nome
+     *            the nome
+     * @param checkin
+     *            the checkin
+     * @param checkout
+     *            the checkout
+     * @param servizi
+     *            the servizi
+     * @param prezzo
+     *            the prezzo
+     * @param camere
+     *            the camere
      */
     public BeanGestioneStrutture(String via, String nome, String checkin, String checkout, String servizi,
 	    double prezzo, int camere) {
@@ -171,7 +178,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the camere.
      *
-     * @param camere the new camere
+     * @param camere
+     *            the new camere
      */
     public void setCamere(int camere) {
 	this.camere = camere;
@@ -180,7 +188,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the cap.
      *
-     * @param CAP the new cap
+     * @param CAP
+     *            the new cap
      */
     public void setCAP(String CAP) {
 	this.CAP = CAP;
@@ -189,7 +198,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the checkin.
      *
-     * @param checkin the new checkin
+     * @param checkin
+     *            the new checkin
      */
     public void setCheckin(String checkin) {
 	this.checkin = checkin;
@@ -198,7 +208,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the checkout.
      *
-     * @param checkout the new checkout
+     * @param checkout
+     *            the new checkout
      */
     public void setCheckout(String checkout) {
 	this.checkout = checkout;
@@ -207,7 +218,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the citta.
      *
-     * @param citta the new citta
+     * @param citta
+     *            the new citta
      */
     public void setCitta(String citta) {
 	this.citta = citta;
@@ -216,7 +228,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the comune.
      *
-     * @param comune the new comune
+     * @param comune
+     *            the new comune
      */
     public void setComune(String comune) {
 	this.comune = comune;
@@ -225,7 +238,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the descrizione.
      *
-     * @param descrizione the new descrizione
+     * @param descrizione
+     *            the new descrizione
      */
     public void setDescrizione(String descrizione) {
 	this.descrizione = descrizione;
@@ -234,7 +248,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the nome.
      *
-     * @param nome the new nome
+     * @param nome
+     *            the new nome
      */
     public void setNome(String nome) {
 	this.nome = nome;
@@ -243,7 +258,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the num civic.
      *
-     * @param numCivic the new num civic
+     * @param numCivic
+     *            the new num civic
      */
     public void setNumCivic(String numCivic) {
 	this.numCivic = numCivic;
@@ -252,7 +268,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the prezzo.
      *
-     * @param prezzo the new prezzo
+     * @param prezzo
+     *            the new prezzo
      */
     public void setPrezzo(double prezzo) {
 	this.prezzo = prezzo;
@@ -261,7 +278,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the regione.
      *
-     * @param regione the new regione
+     * @param regione
+     *            the new regione
      */
     public void setRegione(String regione) {
 	this.regione = regione;
@@ -270,7 +288,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the servizi.
      *
-     * @param servizi the new servizi
+     * @param servizi
+     *            the new servizi
      */
     public void setServizi(String servizi) {
 	this.servizi = servizi;
@@ -279,7 +298,8 @@ public class BeanGestioneStrutture {
     /**
      * Sets the via.
      *
-     * @param via the new via
+     * @param via
+     *            the new via
      */
     public void setVia(String via) {
 	this.via = via;

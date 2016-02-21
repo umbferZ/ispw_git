@@ -1,7 +1,8 @@
 package entity.pagamenti;
 
 import java.io.Serializable;
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The Class TransactionsList.
@@ -20,7 +21,8 @@ public class TransactionsList implements Serializable {
     /**
      * Adds the transaction.
      *
-     * @param transaction the transaction
+     * @param transaction
+     *            the transaction
      */
     public void addTransaction(Transaction transaction) {
 	this.transactionsList.add(transaction);
@@ -38,7 +40,8 @@ public class TransactionsList implements Serializable {
     /**
      * Sets the transactions list.
      *
-     * @param transactionsList the new transactions list
+     * @param transactionsList
+     *            the new transactions list
      */
     public void setTransactionsList(List<Transaction> transactionsList) {
 	this.transactionsList = transactionsList;

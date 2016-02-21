@@ -1,6 +1,10 @@
 package persistency;
 
-import java.sql.*;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.sql.Statement;
 
 /**
  * The Class DAO.
@@ -34,7 +38,8 @@ public class DAO {
     /**
      * Array to string.
      *
-     * @param array the array
+     * @param array
+     *            the array
      * @return the string
      */
     private String arrayToString(Object[] array) {
@@ -57,7 +62,8 @@ public class DAO {
     /**
      * Array to string.
      *
-     * @param array the array
+     * @param array
+     *            the array
      * @return the string
      */
     private String arrayToString(String[] array) {
@@ -72,8 +78,10 @@ public class DAO {
     /**
      * Array to string.
      *
-     * @param arrayLabel the array label
-     * @param arrayValue the array value
+     * @param arrayLabel
+     *            the array label
+     * @param arrayValue
+     *            the array value
      * @return the string
      */
     private String arrayToString(String[] arrayLabel, Object[] arrayValue) {
@@ -103,8 +111,10 @@ public class DAO {
     /**
      * Db query.
      *
-     * @param request the request
-     * @param table the table
+     * @param request
+     *            the request
+     * @param table
+     *            the table
      * @return the result set
      */
     public ResultSet dbQuery(String request, String table) {
@@ -148,10 +158,14 @@ public class DAO {
     /**
      * Db query.
      *
-     * @param requestLabel the request label
-     * @param table the table
-     * @param checkLabel the check label
-     * @param checkValues the check values
+     * @param requestLabel
+     *            the request label
+     * @param table
+     *            the table
+     * @param checkLabel
+     *            the check label
+     * @param checkValues
+     *            the check values
      * @return the result set
      */
     public ResultSet dbQuery(String[] requestLabel, String table, String[] checkLabel, Object[] checkValues) {
@@ -196,7 +210,8 @@ public class DAO {
     /**
      * Db update.
      *
-     * @param sql the sql
+     * @param sql
+     *            the sql
      * @return true, if successful
      */
     public boolean dbUpdate(String sql) {
@@ -235,9 +250,12 @@ public class DAO {
     /**
      * Insert.
      *
-     * @param table the table
-     * @param label the label
-     * @param value the value
+     * @param table
+     *            the table
+     * @param label
+     *            the label
+     * @param value
+     *            the value
      */
     public void insert(String table, String[] label, Object[] value) {
 	Statement stmt = null;

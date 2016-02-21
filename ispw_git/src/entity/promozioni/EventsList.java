@@ -1,6 +1,7 @@
 package entity.promozioni;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * The Class EventsList.
@@ -19,7 +20,8 @@ public class EventsList {
     /**
      * Adds the event.
      *
-     * @param event the event
+     * @param event
+     *            the event
      */
     public void addEvent(Event event) {
 	this.eventsList.add(event);
@@ -28,7 +30,8 @@ public class EventsList {
     /**
      * Delete event.
      *
-     * @param event the event
+     * @param event
+     *            the event
      */
     public void deleteEvent(Event event) {
 	this.eventsList.remove(event);
@@ -55,7 +58,8 @@ public class EventsList {
     /**
      * Sets the events list.
      *
-     * @param eventsList the new events list
+     * @param eventsList
+     *            the new events list
      */
     public void setEventsList(List<Event> eventsList) {
 	this.eventsList = eventsList;

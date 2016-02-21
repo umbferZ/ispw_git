@@ -57,7 +57,8 @@ public class PromotionsBean {
     /**
      * Sets the event.
      *
-     * @param event the new event
+     * @param event
+     *            the new event
      */
     public void setEvent(Event event) {
 	this.event = event;
@@ -66,7 +67,8 @@ public class PromotionsBean {
     /**
      * Sets the struttura.
      *
-     * @param struttura the new struttura
+     * @param struttura
+     *            the new struttura
      */
     public void setStruttura(Struttura struttura) {
 	this.struttura = struttura;

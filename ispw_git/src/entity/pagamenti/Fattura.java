@@ -1,6 +1,6 @@
 package entity.pagamenti;
 
-import java.util.*;
+import java.util.Date;
 
 /**
  * The Class Fattura.
@@ -14,9 +14,12 @@ public class Fattura {
     /**
      * Instantiates a new fattura.
      *
-     * @param prezzo the prezzo
-     * @param intestatario the intestatario
-     * @param date the date
+     * @param prezzo
+     *            the prezzo
+     * @param intestatario
+     *            the intestatario
+     * @param date
+     *            the date
      */
     public Fattura(double prezzo, String intestatario, Date date) {
 	this.prezzo = prezzo;
@@ -54,7 +57,8 @@ public class Fattura {
     /**
      * Sets the date.
      *
-     * @param date the new date
+     * @param date
+     *            the new date
      */
     public void setDate(Date date) {
 	this.date = date;
@@ -63,7 +67,8 @@ public class Fattura {
     /**
      * Sets the intestatario.
      *
-     * @param intestatario the new intestatario
+     * @param intestatario
+     *            the new intestatario
      */
     public void setIntestatario(String intestatario) {
 	this.intestatario = intestatario;
@@ -72,7 +77,8 @@ public class Fattura {
     /**
      * Sets the prezzo.
      *
-     * @param prezzo the new prezzo
+     * @param prezzo
+     *            the new prezzo
      */
     public void setPrezzo(double prezzo) {
 	this.prezzo = prezzo;

@@ -1,6 +1,7 @@
 package entity.persone;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 import entity.strutture.Struttura;
 
@@ -19,12 +20,18 @@ public class Locatore extends UtenteRegistrato {
     /**
      * Instantiates a new locatore.
      *
-     * @param nome the nome
-     * @param cognome the cognome
-     * @param email the email
-     * @param id_utenteRegistrato the id_utente registrato
-     * @param username the username
-     * @param password the password
+     * @param nome
+     *            the nome
+     * @param cognome
+     *            the cognome
+     * @param email
+     *            the email
+     * @param id_utenteRegistrato
+     *            the id_utente registrato
+     * @param username
+     *            the username
+     * @param password
+     *            the password
      */
     public Locatore(String nome, String cognome, String email, int id_utenteRegistrato, String username,
 	    String password) {
@@ -35,13 +42,20 @@ public class Locatore extends UtenteRegistrato {
     /**
      * Instantiates a new locatore.
      *
-     * @param nome the nome
-     * @param cognome the cognome
-     * @param email the email
-     * @param id_utenteRegistrato the id_utente registrato
-     * @param username the username
-     * @param password the password
-     * @param ccNumber the cc number
+     * @param nome
+     *            the nome
+     * @param cognome
+     *            the cognome
+     * @param email
+     *            the email
+     * @param id_utenteRegistrato
+     *            the id_utente registrato
+     * @param username
+     *            the username
+     * @param password
+     *            the password
+     * @param ccNumber
+     *            the cc number
      */
     public Locatore(String nome, String cognome, String email, int id_utenteRegistrato, String username,
 	    String password, int ccNumber) {
@@ -52,13 +66,20 @@ public class Locatore extends UtenteRegistrato {
     /**
      * Instantiates a new locatore.
      *
-     * @param nome the nome
-     * @param cognome the cognome
-     * @param email the email
-     * @param id_utenteRegistrato the id_utente registrato
-     * @param username the username
-     * @param password the password
-     * @param listaStrutture the lista strutture
+     * @param nome
+     *            the nome
+     * @param cognome
+     *            the cognome
+     * @param email
+     *            the email
+     * @param id_utenteRegistrato
+     *            the id_utente registrato
+     * @param username
+     *            the username
+     * @param password
+     *            the password
+     * @param listaStrutture
+     *            the lista strutture
      */
     public Locatore(String nome, String cognome, String email, int id_utenteRegistrato, String username,
 	    String password, List<Struttura> listaStrutture) {
@@ -69,7 +90,8 @@ public class Locatore extends UtenteRegistrato {
     /**
      * Aggrega struttura.
      *
-     * @param struttura the struttura
+     * @param struttura
+     *            the struttura
      */
     public void aggregaStruttura(Struttura struttura) {
 	listaStrutture.add(struttura);
@@ -96,7 +118,8 @@ public class Locatore extends UtenteRegistrato {
     /**
      * Sets the cc number.
      *
-     * @param ccNumber the new cc number
+     * @param ccNumber
+     *            the new cc number
      */
     public void setCcNumber(int ccNumber) {
 	this.ccNumber = ccNumber;
@@ -105,7 +128,8 @@ public class Locatore extends UtenteRegistrato {
     /**
      * Sets the lista strutture.
      *
-     * @param listaStrutture the new lista strutture
+     * @param listaStrutture
+     *            the new lista strutture
      */
     public void setListaStrutture(List<Struttura> listaStrutture) {
 	this.listaStrutture = listaStrutture;

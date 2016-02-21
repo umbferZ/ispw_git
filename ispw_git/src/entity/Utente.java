@@ -17,13 +17,20 @@ public class Utente {
     /**
      * Instantiates a new utente.
      *
-     * @param nome the nome
-     * @param cognome the cognome
-     * @param username the username
-     * @param emailAddress the email address
-     * @param carrello the carrello
-     * @param ccNumber the cc number
-     * @param ccv the ccv
+     * @param nome
+     *            the nome
+     * @param cognome
+     *            the cognome
+     * @param username
+     *            the username
+     * @param emailAddress
+     *            the email address
+     * @param carrello
+     *            the carrello
+     * @param ccNumber
+     *            the cc number
+     * @param ccv
+     *            the ccv
      */
     public Utente(String nome, String cognome, String username, String emailAddress, Carrello carrello, int ccNumber,
 	    int ccv) {
@@ -104,7 +111,8 @@ public class Utente {
     /**
      * Sets the carrello.
      *
-     * @param carrello the new carrello
+     * @param carrello
+     *            the new carrello
      */
     public void setCarrello(Carrello carrello) {
 	this.carrello = carrello;
@@ -113,7 +121,8 @@ public class Utente {
     /**
      * Sets the cc number.
      *
-     * @param ccNumber the new cc number
+     * @param ccNumber
+     *            the new cc number
      */
     public void setCcNumber(int ccNumber) {
 	this.ccNumber = ccNumber;
@@ -122,7 +131,8 @@ public class Utente {
     /**
      * Sets the ccv.
      *
-     * @param ccv the new ccv
+     * @param ccv
+     *            the new ccv
      */
     public void setCcv(int ccv) {
 	this.ccv = ccv;
@@ -131,7 +141,8 @@ public class Utente {
     /**
      * Sets the cognome.
      *
-     * @param cognome the new cognome
+     * @param cognome
+     *            the new cognome
      */
     public void setCognome(String cognome) {
 	this.cognome = cognome;
@@ -140,7 +151,8 @@ public class Utente {
     /**
      * Sets the email address.
      *
-     * @param emailAddress the new email address
+     * @param emailAddress
+     *            the new email address
      */
     public void setEmailAddress(String emailAddress) {
 	this.emailAddress = emailAddress;
@@ -149,7 +161,8 @@ public class Utente {
     /**
      * Sets the nome.
      *
-     * @param nome the new nome
+     * @param nome
+     *            the new nome
      */
     public void setNome(String nome) {
 	this.nome = nome;
@@ -158,7 +171,8 @@ public class Utente {
     /**
      * Sets the username.
      *
-     * @param username the new username
+     * @param username
+     *            the new username
      */
     public void setUsername(String username) {
 	this.username = username;

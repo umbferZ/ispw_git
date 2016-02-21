@@ -18,8 +18,10 @@ public class Persona {
     /**
      * Instantiates a new persona.
      *
-     * @param nome the nome
-     * @param cognome the cognome
+     * @param nome
+     *            the nome
+     * @param cognome
+     *            the cognome
      */
     public Persona(String nome, String cognome) {
 	this.nome = nome;
@@ -47,7 +49,8 @@ public class Persona {
     /**
      * Sets the cognome.
      *
-     * @param cognome the new cognome
+     * @param cognome
+     *            the new cognome
      */
     public void setCognome(String cognome) {
 	this.cognome = cognome;
@@ -56,7 +59,8 @@ public class Persona {
     /**
      * Sets the nome.
      *
-     * @param nome the new nome
+     * @param nome
+     *            the new nome
      */
     public void setNome(String nome) {
 	this.nome = nome;

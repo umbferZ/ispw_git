@@ -57,7 +57,8 @@ public class PaymentControl {
     /**
      * Pay.
      *
-     * @param paymentBean the payment bean
+     * @param paymentBean
+     *            the payment bean
      * @return true, if successful
      */
     public boolean pay(PaymentBean paymentBean) {

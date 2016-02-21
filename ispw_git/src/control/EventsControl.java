@@ -27,7 +27,8 @@ public class EventsControl {
     /**
      * Crea evento.
      *
-     * @param eventsBean the events bean
+     * @param eventsBean
+     *            the events bean
      * @return true, if successful
      */
     public boolean creaEvento(EventsBean eventsBean) {
@@ -55,7 +56,8 @@ public class EventsControl {
     /**
      * Elimina evento.
      *
-     * @param eventsBean the events bean
+     * @param eventsBean
+     *            the events bean
      * @return true, if successful
      */
     public boolean eliminaEvento(EventsBean eventsBean) {

@@ -1,8 +1,8 @@
 package entity.promozioni;
 
-import entity.strutture.Struttura;
-
 import java.io.Serializable;
+
+import entity.strutture.Struttura;
 
 /**
  * The Class Promotion.
@@ -15,8 +15,10 @@ public class Promotion implements Serializable {
     /**
      * Instantiates a new promotion.
      *
-     * @param miaStruttura the mia struttura
-     * @param evento the evento
+     * @param miaStruttura
+     *            the mia struttura
+     * @param evento
+     *            the evento
      */
     public Promotion(Struttura miaStruttura, Event evento) {
 	this.evento = evento;

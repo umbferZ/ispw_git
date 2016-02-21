@@ -1,9 +1,9 @@
 package control;
 
 import bean.PromotionsBean;
-import persistency.LoadAndStoreObjectsOnFile;
 import entity.promozioni.Promotion;
 import entity.promozioni.PromotionsList;
+import persistency.LoadAndStoreObjectsOnFile;
 
 /**
  * The Class PromotionsControl.
@@ -33,7 +33,8 @@ public class PromotionsControl {
     /**
      * Creates the promotion.
      *
-     * @param promotionsBean the promotions bean
+     * @param promotionsBean
+     *            the promotions bean
      * @return true, if successful
      */
     public boolean createPromotion(PromotionsBean promotionsBean) {
@@ -60,7 +61,8 @@ public class PromotionsControl {
     /**
      * Delete promotion.
      *
-     * @param promotionsBean the promotions bean
+     * @param promotionsBean
+     *            the promotions bean
      * @return true, if successful
      */
     public boolean deletePromotion(PromotionsBean promotionsBean) {

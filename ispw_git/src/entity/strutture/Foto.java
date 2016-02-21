@@ -1,6 +1,9 @@
 package entity.strutture;
 
-import java.io.*;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
 
 /**
  * The Class Foto.
@@ -13,7 +16,8 @@ public class Foto {
     /**
      * Instantiates a new foto.
      *
-     * @param nomeFile the nome file
+     * @param nomeFile
+     *            the nome file
      */
     public Foto(String nomeFile) {
 	System.out.println(nomeFile);
@@ -56,8 +60,9 @@ public class Foto {
     /**
      * Read file.
      *
-     * @return the string
-     * @throws IOException Signals that an I/O exception has occurred.
+     * @return string
+     * @throws IOException
+     *             Signals that an I/O exception has occurred.
      */
     public String readFile() throws IOException {
 	if (chkIn()) {
@@ -75,7 +80,8 @@ public class Foto {
     /**
      * Sets the contenuto file.
      *
-     * @param contenutoFile the new contenuto file
+     * @param contenutoFile
+     *            the new contenuto file
      */
     public void setContenutoFile(String contenutoFile) {
 	this.contenutoFile = contenutoFile;
@@ -84,7 +90,8 @@ public class Foto {
     /**
      * Sets the nome file.
      *
-     * @param nomeFile the new nome file
+     * @param nomeFile
+     *            the new nome file
      */
     public void setNomeFile(String nomeFile) {
 	this.nomeFile = nomeFile;

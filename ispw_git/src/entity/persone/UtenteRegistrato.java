@@ -25,12 +25,18 @@ public class UtenteRegistrato extends Persona {
     /**
      * Instantiates a new utente registrato.
      *
-     * @param nome the nome
-     * @param cognome the cognome
-     * @param email the email
-     * @param id_utenteRegistrato the id_utente registrato
-     * @param username the username
-     * @param password the password
+     * @param nome
+     *            the nome
+     * @param cognome
+     *            the cognome
+     * @param email
+     *            the email
+     * @param id_utenteRegistrato
+     *            the id_utente registrato
+     * @param username
+     *            the username
+     * @param password
+     *            the password
      */
     public UtenteRegistrato(String nome, String cognome, String email, int id_utenteRegistrato, String username,
 	    String password) {
@@ -80,7 +86,8 @@ public class UtenteRegistrato extends Persona {
     /**
      * Sets the email.
      *
-     * @param email the new email
+     * @param email
+     *            the new email
      */
     public void setEmail(String email) {
 	this.email = email;
@@ -89,7 +96,8 @@ public class UtenteRegistrato extends Persona {
     /**
      * Sets the id_utente registrato.
      *
-     * @param id_utenteRegistrato the new id_utente registrato
+     * @param id_utenteRegistrato
+     *            the new id_utente registrato
      */
     public void setId_utenteRegistrato(int id_utenteRegistrato) {
 	this.id_utenteRegistrato = id_utenteRegistrato;
@@ -98,7 +106,8 @@ public class UtenteRegistrato extends Persona {
     /**
      * Sets the password.
      *
-     * @param password the new password
+     * @param password
+     *            the new password
      */
     public void setPassword(String password) {
 	this.password = password;
@@ -107,7 +116,8 @@ public class UtenteRegistrato extends Persona {
     /**
      * Sets the username.
      *
-     * @param username the new username
+     * @param username
+     *            the new username
      */
     public void setUsername(String username) {
 	this.username = username;

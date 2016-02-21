@@ -14,9 +14,12 @@ public class Transaction implements Serializable {
     /**
      * Instantiates a new transaction.
      *
-     * @param price the price
-     * @param locatoreCCNumber the locatore cc number
-     * @param userCCNumber the user cc number
+     * @param price
+     *            the price
+     * @param locatoreCCNumber
+     *            the locatore cc number
+     * @param userCCNumber
+     *            the user cc number
      */
     public Transaction(double price, int locatoreCCNumber, int userCCNumber) {
 	this.price = price;
@@ -55,7 +58,8 @@ public class Transaction implements Serializable {
     /**
      * Sets the locatore cc number.
      *
-     * @param locatoreCCNumber the new locatore cc number
+     * @param locatoreCCNumber
+     *            the new locatore cc number
      */
     public void setLocatoreCCNumber(int locatoreCCNumber) {
 	this.locatoreCCNumber = locatoreCCNumber;
@@ -64,7 +68,8 @@ public class Transaction implements Serializable {
     /**
      * Sets the price.
      *
-     * @param price the new price
+     * @param price
+     *            the new price
      */
     public void setPrice(double price) {
 	this.price = price;
@@ -73,7 +78,8 @@ public class Transaction implements Serializable {
     /**
      * Sets the user cc number.
      *
-     * @param userCCNumber the new user cc number
+     * @param userCCNumber
+     *            the new user cc number
      */
     public void setUserCCNumber(int userCCNumber) {
 	this.userCCNumber = userCCNumber;
