@@ -9,42 +9,42 @@ import java.util.List;
  */
 public class TransactionsList implements Serializable {
 
-    private List<Transaction> transactionsList;
+	private List<Transaction> transactionsList;
 
-    /**
-     * Instantiates a new transactions list.
-     */
-    public TransactionsList() {
-	this.transactionsList = new ArrayList<>();
-    }
+	/**
+	 * Instantiates a new transactions list.
+	 */
+	public TransactionsList() {
+		this.transactionsList = new ArrayList<>();
+	}
 
-    /**
-     * Adds the transaction.
-     *
-     * @param transaction
-     *            the transaction
-     */
-    public void addTransaction(Transaction transaction) {
-	this.transactionsList.add(transaction);
-    }
+	/**
+	 * Adds the transaction.
+	 *
+	 * @param transaction
+	 *            the transaction
+	 */
+	public void addTransaction(Transaction transaction) {
+		this.transactionsList.add(transaction);
+	}
 
-    /**
-     * Gets the transactions list.
-     *
-     * @return the transactions list
-     */
-    public List<Transaction> getTransactionsList() {
-	return transactionsList;
-    }
+	/**
+	 * Gets the transactions list.
+	 *
+	 * @return transactions list
+	 */
+	public List<Transaction> getTransactionsList() {
+		return transactionsList;
+	}
 
-    /**
-     * Sets the transactions list.
-     *
-     * @param transactionsList
-     *            the new transactions list
-     */
-    public void setTransactionsList(List<Transaction> transactionsList) {
-	this.transactionsList = transactionsList;
-    }
+	/**
+	 * Sets the transactions list.
+	 *
+	 * @param transactionsList
+	 *            the new transactions list
+	 */
+	public void setTransactionsList(List<Transaction> transactionsList) {
+		this.transactionsList = transactionsList;
+	}
 
 }

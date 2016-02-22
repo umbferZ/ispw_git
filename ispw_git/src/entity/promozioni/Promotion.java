@@ -9,21 +9,21 @@ import entity.strutture.Struttura;
  */
 public class Promotion implements Serializable {
 
-    private Event evento;
-    private Struttura miaStruttura;
+	private Event evento;
+	private Struttura miaStruttura;
 
-    /**
-     * Instantiates a new promotion.
-     *
-     * @param miaStruttura
-     *            the mia struttura
-     * @param evento
-     *            the evento
-     */
-    public Promotion(Struttura miaStruttura, Event evento) {
-	this.evento = evento;
-	this.miaStruttura = miaStruttura;
-	System.out.println("Promozione creata!");
-    }
+	/**
+	 * Instantiates a new promotion.
+	 *
+	 * @param miaStruttura
+	 *            the mia struttura
+	 * @param evento
+	 *            the evento
+	 */
+	public Promotion(Struttura miaStruttura, Event evento) {
+		this.evento = evento;
+		this.miaStruttura = miaStruttura;
+		System.out.println("Promozione creata!");
+	}
 
 }

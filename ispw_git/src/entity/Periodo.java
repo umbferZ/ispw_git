@@ -7,39 +7,36 @@ import java.util.Date;
  */
 public class Periodo {
 
-    private Date checkin;
+	private Date checkin;
 
-    private Date checkout;
+	private Date checkout;
 
-    /**
-     * Instantiates a new periodo.
-     *
-     * @param checkin
-     *            the checkin
-     * @param checkout
-     *            the checkout
-     */
-    public Periodo(Date checkin, Date checkout) {
-	this.checkin = checkin;
-	this.checkout = checkout;
-    }
-
-    /**
-     * Checks if is in.
-     *
-     * @param anotherPeriod
-     *            the another period
-     * @return true, if is in
-     */
-    public boolean isIn(Periodo anotherPeriod) {
-	if (this.checkin.compareTo(anotherPeriod.checkin) <= 0 && this.checkout.compareTo(anotherPeriod.checkin) <= 0) {
-	    return true;
+	/**
+	 * Instantiates a new periodo.
+	 *
+	 * @param checkin
+	 *            the checkin
+	 * @param checkout
+	 *            the checkout
+	 */
+	public Periodo(Date checkin, Date checkout) {
+		this.checkin = checkin;
+		this.checkout = checkout;
 	}
-	if (this.checkin.compareTo(anotherPeriod.checkout) >= 0
-		&& this.checkout.compareTo(anotherPeriod.checkout) >= 0) {
-	    return true;
+
+	/**
+	 * Checks if is in.
+	 *
+	 * @param anotherPeriod
+	 *            the another period
+	 * @return true, if is in
+	 */
+	public boolean isIn(Periodo anotherPeriod) {
+		if (this.checkin.compareTo(anotherPeriod.checkin) <= 0 && this.checkout.compareTo(anotherPeriod.checkin) <= 0)
+			return true;
+		if (this.checkin.compareTo(anotherPeriod.checkout) >= 0 && this.checkout.compareTo(anotherPeriod.checkout) >= 0)
+			return true;
+		return false;
 	}
-	return false;
-    }
 
 }

@@ -10,75 +10,74 @@ import persistency.LoadAndStoreObjectsOnFile;
  */
 public class EventsControl {
 
-    private static EventsControl instance = null;
+	private static EventsControl instance = null;
 
-    /**
-     * Gets the single instance of EventsControl.
-     *
-     * @return single instance of EventsControl
-     */
-    public static synchronized EventsControl getInstance() {
-	if (EventsControl.instance == null) {
-	    instance = new EventsControl();
+	/**
+	 * Gets the single instance of EventsControl.
+	 *
+	 * @return single instance of EventsControl
+	 */
+	public static synchronized EventsControl getInstance() {
+		if (EventsControl.instance == null)
+			instance = new EventsControl();
+		return instance;
 	}
-	return instance;
-    }
 
-    /**
-     * Crea evento.
-     *
-     * @param eventsBean
-     *            the events bean
-     * @return true, if successful
-     */
-    public boolean creaEvento(EventsBean eventsBean) {
+	/**
+	 * Crea evento.
+	 *
+	 * @param eventsBean
+	 *            the events bean
+	 * @return true, if successful
+	 */
+	public boolean creaEvento(EventsBean eventsBean) {
 
-	// <<create>> Event
+		// <<create>> Event
 
-	Event event = new Event(eventsBean.getNome(), eventsBean.getDescrizione(), eventsBean.getCitta(),
-		eventsBean.getLuogo(), eventsBean.getOrario(), eventsBean.getDate());
-	EventsList eventsList = new EventsList();
-	LoadAndStoreObjectsOnFile evListStream = new LoadAndStoreObjectsOnFile("./eventsList.txt");
-	eventsList = (EventsList) evListStream.loadObject();
+		Event event = new Event(eventsBean.getNome(), eventsBean.getDescrizione(), eventsBean.getCitta(),
+				eventsBean.getLuogo(), eventsBean.getOrario(), eventsBean.getDate());
+		EventsList eventsList = new EventsList();
+		LoadAndStoreObjectsOnFile evListStream = new LoadAndStoreObjectsOnFile("./eventsList.txt");
+		eventsList = (EventsList) evListStream.loadObject();
 
-	// delete
+		// delete
 
-	eventsList.addEvent(event);
-	LoadAndStoreObjectsOnFile outStream = new LoadAndStoreObjectsOnFile("./promotionsList.txt");
-	outStream.storeObject(eventsList);
+		eventsList.addEvent(event);
+		LoadAndStoreObjectsOnFile outStream = new LoadAndStoreObjectsOnFile("./promotionsList.txt");
+		outStream.storeObject(eventsList);
 
-	// oggetto Promotion serializzato su file promotionsList.txt che viene
-	// aggiornato
+		// oggetto Promotion serializzato su file promotionsList.txt che viene
+		// aggiornato
 
-	return true;
-    }
+		return true;
+	}
 
-    /**
-     * Elimina evento.
-     *
-     * @param eventsBean
-     *            the events bean
-     * @return true, if successful
-     */
-    public boolean eliminaEvento(EventsBean eventsBean) {
+	/**
+	 * Elimina evento.
+	 *
+	 * @param eventsBean
+	 *            the events bean
+	 * @return true, if successful
+	 */
+	public boolean eliminaEvento(EventsBean eventsBean) {
 
-	// <<create>> Event
+		// <<create>> Event
 
-	Event event = new Event(eventsBean.getNome(), eventsBean.getDescrizione(), eventsBean.getCitta(),
-		eventsBean.getLuogo(), eventsBean.getOrario(), eventsBean.getDate());
-	EventsList eventsList = new EventsList();
-	LoadAndStoreObjectsOnFile evListStream = new LoadAndStoreObjectsOnFile("./eventsList.txt");
-	eventsList = (EventsList) evListStream.loadObject();
+		Event event = new Event(eventsBean.getNome(), eventsBean.getDescrizione(), eventsBean.getCitta(),
+				eventsBean.getLuogo(), eventsBean.getOrario(), eventsBean.getDate());
+		EventsList eventsList = new EventsList();
+		LoadAndStoreObjectsOnFile evListStream = new LoadAndStoreObjectsOnFile("./eventsList.txt");
+		eventsList = (EventsList) evListStream.loadObject();
 
-	// delete
+		// delete
 
-	eventsList.deleteEvent(event);
-	LoadAndStoreObjectsOnFile outStream = new LoadAndStoreObjectsOnFile("./promotionsList.txt");
-	outStream.storeObject(eventsList);
+		eventsList.deleteEvent(event);
+		LoadAndStoreObjectsOnFile outStream = new LoadAndStoreObjectsOnFile("./promotionsList.txt");
+		outStream.storeObject(eventsList);
 
-	// oggetto Promotion serializzato su file promotionsList.txt che viene
-	// aggiornato
+		// oggetto Promotion serializzato su file promotionsList.txt che viene
+		// aggiornato
 
-	return true;
-    }
+		return true;
+	}
 }

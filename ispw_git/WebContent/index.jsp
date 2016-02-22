@@ -5,38 +5,22 @@
   Time: 12:13
   To change this template use File | Settings | File Templates.
 --%>
-
 <jsp:include page="includes/header.jsp" />
-
 <br>
 <br>
-
 <div class="container">
-	<form
-		action="UCPromozioni/UCPromozioni00ListaEventi.jsp"
-		method="get">
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
+	<form action="UCPromozioni00ListaEventi.jsp" method="get">
+		<button class="btn waves-effect waves-light" type="submit"
 			name="action">Gestisci promozioni</button>
 	</form>
-	<form
-		action="UCPagamento/UCPagamento00Carrello.jsp"
-		method="get">
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
+	<form action="UCPagamento00Carrello.jsp" method="get">
+		<button class="btn waves-effect waves-light" type="submit"
 			name="action">Effettua pagamento del carrello</button>
 	</form>
-	<form
-		action="UCPagamento/UCPagamentoPremium00InserimentoDati.jsp"
-		method="get">
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
+	<form action="UCPagamentoPremium00InserimentoDati.jsp" method="get">
+		<button class="btn waves-effect waves-light" type="submit"
 			name="action">Attiva account premium</button>
 	</form>
-
-	<a href="UCEventi/UCEventi00InserisciEvento.jsp">Eventi</a> <br>
+	<a href="UCEventi00InserisciEvento.jsp">Eventi</a> <br>
 </div>
 <jsp:include page="includes/footer.jsp" />

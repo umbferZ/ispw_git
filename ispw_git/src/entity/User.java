@@ -5,13 +5,13 @@ package entity;
  */
 public class User {
 
-    private Cart cart;
+	private Cart cart;
 
-    /**
-     * Instantiates a new user.
-     */
-    public User() {
-	cart = new Cart();
-    }
+	/**
+	 * Instantiates a new user.
+	 */
+	public User() {
+		cart = new Cart();
+	}
 
 }

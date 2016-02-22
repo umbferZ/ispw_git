@@ -5,16 +5,16 @@ package entity.pagamenti;
  */
 public class CreditCard {
 
-    private int cardNumber;
-    private int ccv;
-    private String name;
+	private int cardNumber;
+	private int ccv;
+	private String name;
 
-    /**
-     * Instantiates a new credit card.
-     */
-    public CreditCard() {
-    }
+	/**
+	 * Instantiates a new credit card.
+	 */
+	public CreditCard() {
+	}
 
-    // controlla nel persistency delle cc
+	// controlla nel persistency delle cc
 
 }
