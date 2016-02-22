@@ -10,8 +10,7 @@
 <head>
 <link rel="stylesheet" href="css/materialize.min.css">
 <link href="http://fonts.googleapis.com/icon?family=Material+Icons"
-	rel="stylesheet"
->
+	rel="stylesheet">
 <title>JAVAcanze</title>
 </head>
 <body>
@@ -38,4 +37,4 @@
 	<div class="section no-pad-bot">
 		<div class="conatiner"></div>
 	</div>
-	<div style="min-height: 500px;">
+	<div style="min-height: 700px;">

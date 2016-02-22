@@ -5,17 +5,8 @@
   Time: 16:58
   To change this template use File | Settings | File Templates.
 --%>
-<!-- <footer class="page-footer grey darken-1">
-	<div style="padding: 10px 20px;">
-		<div style="color: white">
-			site based of <a href="http://materializecss.com/about.html"
-				target="on_blank">materialize CSS</a>
-		</div>
-	</div>
-</footer> -->
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"
-%>
+	pageEncoding="UTF-8"%>
 </div>
 <footer class="page-footer grey darken-1">
 	<div class="container">
@@ -38,9 +29,9 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			© 2014 Copyright Text <a class="grey-text text-lighten-4 right"
-				href="#!"
-			>More Links</a>
+			based on <a class="grey-text text-lighten-4"
+				href="http://materializecss.com/about.html" target="on_blank">materialize
+				CSS</a>
 		</div>
 	</div>
 </footer>
