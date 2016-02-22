@@ -10,7 +10,6 @@
 				    for (int i = 0; i < 10; i++) {
 				%>
 				<jsp:include page="includes/cartItem.jsp">
-					<jsp:param value="<%=i %>" name="id" />
 				</jsp:include>
 				<%
 				    }

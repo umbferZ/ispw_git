@@ -13,6 +13,7 @@ public class Struttura {
 
 	/**
 	 * Instantiates a new struttura.
+	private ArrayList<Periodo> bookingList;
 	 */
 	public Struttura() {
 		bookingList = new ArrayList<>();

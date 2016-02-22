@@ -7,7 +7,7 @@ public class Price {
 
 	private char currency;
 
-	private Double value;
+	private double value;
 
 	/**
 	 * Instantiates a new price.
