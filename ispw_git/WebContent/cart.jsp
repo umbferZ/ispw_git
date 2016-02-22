@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
-</head>
-<body>
-	<%="ciaso"%>
-</body>
-</html>
+<jsp:include page="includes/header.jsp"></jsp:include>
+<div class="container">
+	<div class="row">
+		<%
+			for (int i = 0; i < 10; i++) {
+		%>
+		<jsp:include page="includes/itemCart.jsp"></jsp:include>
+		<%
+			}
+		%>
+	</div>
+</div>
+<jsp:include page="includes/footer.jsp"></jsp:include>

@@ -22,7 +22,7 @@
 				<li><a href="index.jsp">Offerte</a></li>
 				<li><a href="index.jsp">Profilo</a></li>
 				<li><a href="index.jsp"><i class="material-icons">search</i></a></li>
-				<li><a href="index.jsp"><i class="material-icons">cart</i></a></li>
+				<li><a href="cart.jsp"><i class="material-icons">shopping_cart</i></a></li>
 			</ul>
 		</div>
 	</nav>
