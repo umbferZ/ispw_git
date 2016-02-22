@@ -67,8 +67,12 @@
 	<br>
 	<hr>
 	<br>
-	<form method="post" action="UCPagamento01InserimentoDati.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
+	<form
+		method="post"
+		action="UCPagamento01InserimentoDati.jsp">
+		<button
+			class="btn waves-effect waves-light"
+			type="submit"
 			name="action">Procedi al pagamento</button>
 	</form>
 	<br>
