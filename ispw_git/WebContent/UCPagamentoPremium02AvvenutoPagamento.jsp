@@ -12,16 +12,15 @@
 	<%
 		if (payBean.paga()) {
 	%>
-	<h4>Il pagamento è avvenuto con successo. Sei un nuovo account
-		Premium!</h4>
+	<h4>Il pagamento è avvenuto con successo. Sei un nuovo account Premium!</h4>
 	<%
 		} else {
 	%>
 	<h4>Spiacenti! I dati inseriti non sono corretti.</h4>
 	<br>
 	<form method="get" action="UCPagamento01InserimentoDati.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Modifica i dati inseriti</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Modifica
+			i dati inseriti</button>
 	</form>
 	<%
 		}
@@ -30,8 +29,8 @@
 	<hr>
 	<br>
 	<form method="get" action="index.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Torna alla Home</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Torna
+			alla Home</button>
 	</form>
 </div>
 <br>

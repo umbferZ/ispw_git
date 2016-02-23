@@ -26,16 +26,14 @@
 				<td>Vasco Rossi - LiveKOM016</td>
 				<td>22-23/06/2016 ore 21:15</td>
 				<td><form method="post" action="UCPromozioni01Adesione.jsp">
-						<button class="btn waves-effect waves-light" type="submit"
-							name="action">Modifica</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Modifica</button>
 					</form></td>
 			</tr>
 			<tr>
 				<td>Rugby SixNations2016 - Italy France</td>
 				<td>27/02/2016 ore 15:00</td>
 				<td><form method="post" action="UCPromozioni01Adesione.jsp">
-						<button class="btn waves-effect waves-light" type="submit"
-							name="action">Modifica</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Modifica</button>
 					</form></td>
 			</tr>
 		</tbody>

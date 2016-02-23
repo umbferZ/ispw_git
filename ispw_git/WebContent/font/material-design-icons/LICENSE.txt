@@ -93,7 +93,7 @@ Section 1 -- Definitions.
 
   d. Copyright and Similar Rights means copyright and/or similar rights
      closely related to copyright including, without limitation,
-     performance, broadcast, sound recording, and Sui Generis persistency
+     performance, broadcast, sound recording, and Sui Generis Database
      Rights, without regard to how the rights are labeled or
      categorized. For purposes of this Public License, the rights
      specified in Section 2(b)(1)-(2) are not Copyright and Similar
@@ -113,7 +113,7 @@ Section 1 -- Definitions.
      of a Creative Commons Public License. The License Elements of this
      Public License are Attribution and ShareAlike.
 
-  h. Licensed Material means the artistic or literary work, persistency,
+  h. Licensed Material means the artistic or literary work, database,
      or other material to which the Licensor applied this Public
      License.
 
@@ -133,7 +133,7 @@ Section 1 -- Definitions.
      public may access the material from a place and at a time
      individually chosen by them.
 
-  l. Sui Generis persistency Rights means rights other than copyright
+  l. Sui Generis Database Rights means rights other than copyright
      resulting from Directive 96/9/EC of the European Parliament and of
      the Council of 11 March 1996 on the legal protection of databases,
      as amended and/or succeeded, as well as other essentially
@@ -293,23 +293,23 @@ following conditions.
           rights granted under the Adapter's License You apply.
 
 
-Section 4 -- Sui Generis persistency Rights.
+Section 4 -- Sui Generis Database Rights.
 
-Where the Licensed Rights include Sui Generis persistency Rights that
+Where the Licensed Rights include Sui Generis Database Rights that
 apply to Your use of the Licensed Material:
 
   a. for the avoidance of doubt, Section 2(a)(1) grants You the right
      to extract, reuse, reproduce, and Share all or a substantial
-     portion of the contents of the persistency;
+     portion of the contents of the database;
 
-  b. if You include all or a substantial portion of the persistency
-     contents in a persistency in which You have Sui Generis persistency
-     Rights, then the persistency in which You have Sui Generis persistency
+  b. if You include all or a substantial portion of the database
+     contents in a database in which You have Sui Generis Database
+     Rights, then the database in which You have Sui Generis Database
      Rights (but not its individual contents) is Adapted Material,
 
      including for purposes of Section 3(b); and
   c. You must comply with the conditions in Section 3(a) if You Share
-     all or a substantial portion of the contents of the persistency.
+     all or a substantial portion of the contents of the database.
 
 For the avoidance of doubt, this Section 4 supplements and does not
 replace Your obligations under this Public License where the Licensed

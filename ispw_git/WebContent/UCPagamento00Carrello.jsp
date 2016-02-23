@@ -42,8 +42,7 @@
 	</h5>
 	<br>
 	<form method="post" action="index.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Modifica</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Modifica</button>
 	</form>
 	<br>
 	<hr style="color: #3d5afe">
@@ -67,13 +66,9 @@
 	<br>
 	<hr>
 	<br>
-	<form
-		method="post"
-		action="UCPagamento01InserimentoDati.jsp">
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
-			name="action">Procedi al pagamento</button>
+	<form method="post" action="UCPagamento01InserimentoDati.jsp">
+		<button class="btn waves-effect waves-light" type="submit" name="action">Procedi
+			al pagamento</button>
 	</form>
 	<br>
 </div>

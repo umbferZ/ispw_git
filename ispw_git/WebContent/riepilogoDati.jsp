@@ -1,11 +1,8 @@
-<%@ page import="bean.*"%>
-<%@ page
-	contentType="text/html;charset=UTF-8"
-	language="java"%>
+<%-- <%@ page import="bean.*"%>
+<%@ page contentType="text/html;charset=UTF-8" language="java"%>
 
 <%
-	BeanGestioneStrutture myBean = (BeanGestioneStrutture) session
-			.getAttribute("Bean");
+	BeanGestioneStrutture myBean = (BeanGestioneStrutture) session.getAttribute("Bean");
 	if (myBean == null) {
 %>
 <h4>bean not found!</h4>
@@ -21,9 +18,7 @@
 	<h5 style="color: slategray">Riepilogo dati:</h5>
 	<h6>dati generali:</h6>
 	<br> <br> <br>
-	<form
-		method="POST"
-		action="strutturaRegistrata.jsp">
+	<form method="POST" action="strutturaRegistrata.jsp">
 		<p>
 			Nome albergo:
 			<%=request.getParameter("nome")%></p>
@@ -72,21 +67,14 @@
 		<br>
 
 
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
-			name="action">Procedi alla registrazione</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Procedi
+			alla registrazione</button>
 	</form>
 
 	<br>
 
-	<form
-		method="POST"
-		action="formRegistrazioneAlbergo.jsp">
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
-			name="action">Indietro</button>
+	<form method="POST" action="formRegistrazioneAlbergo.jsp">
+		<button class="btn waves-effect waves-light" type="submit" name="action">Indietro</button>
 	</form>
 
 	<br>
@@ -105,9 +93,7 @@
 	<h5 style="color: slategray">Riepilogo dati:</h5>
 	<h6>dati generali:</h6>
 	<br> <br> <br>
-	<form
-		method="POST"
-		action="strutturaRegistrata.jsp">
+	<form method="POST" action="strutturaRegistrata.jsp">
 		<p>
 			Nome albergo:
 			<%=request.getParameter("nome")%></p>
@@ -154,21 +140,14 @@
 		<br>
 
 
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
-			name="action">Procedi alla registrazione</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Procedi
+			alla registrazione</button>
 	</form>
 
 	<br>
 
-	<form
-		method="POST"
-		action="formRegistrazioneResidence.jsp">
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
-			name="action">Indietro</button>
+	<form method="POST" action="formRegistrazioneResidence.jsp">
+		<button class="btn waves-effect waves-light" type="submit" name="action">Indietro</button>
 	</form>
 
 	<br>
@@ -187,9 +166,7 @@
 	<h5 style="color: slategray">Riepilogo dati:</h5>
 	<h6>dati generali:</h6>
 	<br> <br> <br>
-	<form
-		method="POST"
-		action="strutturaRegistrata.jsp">
+	<form method="POST" action="strutturaRegistrata.jsp">
 		<p>
 			Nome appartamento:
 			<%=request.getParameter("nome")%></p>
@@ -232,21 +209,14 @@
 		<br>
 
 
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
-			name="action">Procedi alla registrazione</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Procedi
+			alla registrazione</button>
 	</form>
 
 	<br>
 
-	<form
-		method="POST"
-		action="formRegistrazioneAppartamento.jsp">
-		<button
-			class="btn waves-effect waves-light"
-			type="submit"
-			name="action">Indietro</button>
+	<form method="POST" action="formRegistrazioneAppartamento.jsp">
+		<button class="btn waves-effect waves-light" type="submit" name="action">Indietro</button>
 	</form>
 
 	<br>
@@ -256,4 +226,4 @@
 <jsp:include page="/includes/footer.jsp" />
 <%
 	}
-%>
+%> --%>

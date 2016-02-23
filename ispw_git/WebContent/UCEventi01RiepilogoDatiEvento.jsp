@@ -36,13 +36,13 @@
 	<hr>
 	<br> <br>
 	<form method="get" action="UCEventi02EventoInserito.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Conferma inserimento Evento</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Conferma
+			inserimento Evento</button>
 	</form>
 	<br>
 	<form method="get" action="UCEventi00InserisciEvento.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Torna indietro</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Torna
+			indietro</button>
 	</form>
 	<br>
 </div>

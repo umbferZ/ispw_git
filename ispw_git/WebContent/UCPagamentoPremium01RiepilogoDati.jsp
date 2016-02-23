@@ -28,13 +28,13 @@
 	<hr>
 	<br> <br>
 	<form method="get" action="UCPagamentoPremium00InserimentoDati.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Torna indietro</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Torna
+			indietro</button>
 	</form>
 	<br>
 	<form method="get" action="UCPagamentoPremium02AvvenutoPagamento.jsp">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Conferma e paga</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Conferma
+			e paga</button>
 	</form>
 	<br>
 </div>

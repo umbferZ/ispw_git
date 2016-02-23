@@ -13,8 +13,8 @@
 		<div class="row">
 			<div class="col l6 s12">
 				<h5 class="white-text">Footer Content</h5>
-				<p class="grey-text text-lighten-4">You can use rows and columns
-					here to organize your footer content.</p>
+				<p class="grey-text text-lighten-4">You can use rows and columns here to
+					organize your footer content.</p>
 			</div>
 			<div class="col l4 offset-l2 s12">
 				<h5 class="white-text">Links</h5>
@@ -29,15 +29,13 @@
 	</div>
 	<div class="footer-copyright">
 		<div class="container">
-			based on <a class="grey-text text-lighten-4"
+			based on
+			<a class="grey-text text-lighten-4"
 				href="http://materializecss.com/about.html" target="on_blank">materialize
 				CSS</a>
 		</div>
 	</div>
 </footer>
-<script src="js/materialize.min.js"></script>
-<script type="text/javascript" src="js/jquery-2.1.1.min.js">
-	
-</script>
+<jsp:include page="script.jsp"></jsp:include>
 </body>
 </html>

@@ -24,8 +24,7 @@
 				<td>Rome, Stadio Olimpico</td>
 				<td>
 					<form method="post" action="UCPromozioni01Adesione.jsp">
-						<button class="btn waves-effect waves-light" type="submit"
-							name="action">Aderisci</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Aderisci</button>
 					</form>
 				</td>
 			</tr>
@@ -35,8 +34,7 @@
 				<td>Rome, Stadio Olimpico</td>
 				<td>
 					<form method="post" action="UCPromozioni01Adesione.jsp">
-						<button class="btn waves-effect waves-light" type="submit"
-							name="action">Aderisci</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Aderisci</button>
 					</form>
 				</td>
 			</tr>
@@ -46,8 +44,7 @@
 				<td>Milan, San Siro</td>
 				<td>
 					<form method="post" action="UCPromozioni01Adesione.jsp">
-						<button class="btn waves-effect waves-light" type="submit"
-							name="action">Aderisci</button>
+						<button class="btn waves-effect waves-light" type="submit" name="action">Aderisci</button>
 					</form>
 				</td>
 			</tr>

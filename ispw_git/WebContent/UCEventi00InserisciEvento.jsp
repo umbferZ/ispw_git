@@ -23,13 +23,12 @@
 	<br>
 	<h5 style="color: slategray">Inserisci i tuoi dati dell'Evento:</h5>
 	<br>
-	<form class="col s12" action="UCEventi01RiepilogoDatiEvento.jsp"
-		method="post">
+	<form class="col s12" action="UCEventi01RiepilogoDatiEvento.jsp" method="post">
 		<br>
 		<div class="row">
 			<div class="input-field col s6">
-				<input placeholder="Nome dell'evento" name="name" id="name"
-					type="text" class="validate">
+				<input placeholder="Nome dell'evento" name="name" id="name" type="text"
+					class="validate">
 			</div>
 		</div>
 		<div class="row">
@@ -52,18 +51,17 @@
 		</div>
 		<div class="row">
 			<div class="input-field col s6">
-				<input placeholder="Data" name="data" id="data" type="date"
-					class="validate">
+				<input placeholder="Data" name="data" id="data" type="date" class="validate">
 			</div>
 		</div>
 		<br>
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action" value="conferma">Inserisci Evento</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action"
+			value="conferma">Inserisci Evento</button>
 	</form>
 	<br>
 	<form class="col s12" action="index.jsp" method="post">
-		<button class="btn waves-effect waves-light" type="submit"
-			name="action">Torna indietro</button>
+		<button class="btn waves-effect waves-light" type="submit" name="action">Torna
+			indietro</button>
 	</form>
 </div>
 <br>
