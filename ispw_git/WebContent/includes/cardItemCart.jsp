@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"
+%>
 <div class="col s6">
 	<div class="card">
 		<div class="card-image">
@@ -24,10 +25,11 @@
 		</div>
 		<div class="card-action">
 			<div class="container">
-				<form method="get" action="">
-					<button class="btn amber darken-4" type="submit" name="addItem"
-						value="<%=request.getParameter("id")%>">rimuovi</button>
+				<form method="get" action="search.jsp">
+					<button class="btn amber darken-4" type="submit" name="idStrut" value="01">Dettagli</button>
 				</form>
+				<a href="?delItem=<%=request.getParameter("id")%>" class="text-gray tiny">elimina
+					dal carrello</a>
 			</div>
 		</div>
 	</div>
