@@ -8,7 +8,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
 </div>
+<jsp:include page="cardSession.jsp"></jsp:include>
 <footer class="page-footer grey darken-1">
+
 	<div class="container">
 		<div class="row">
 			<div class="col l6 s12">

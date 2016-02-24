@@ -23,4 +23,5 @@
 <body class="grey lighten-4">
 	<jsp:include page="barNav.jsp"></jsp:include>
 	<div class="section no-pad-bot"></div>
+	
 	<div class="grey lighten-4" style="min-height: 700px;">
