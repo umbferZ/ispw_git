@@ -9,68 +9,68 @@ import entity.strutture.Struttura;
  */
 public class PromotionsBean {
 
-	private Event event;
-	private Struttura struttura;
+    private Event event;
+    private Struttura struttura;
 
-	/**
-	 * Instantiates a new promotions bean.
-	 */
-	public PromotionsBean() {
-	}
+    /**
+     * Instantiates a new promotions bean.
+     */
+    public PromotionsBean() {
+    }
 
-	/**
-	 * Cancella promozione.
-	 *
-	 * @return true, if successful
-	 */
-	public boolean cancellaPromozione() {
-		return PromotionsControl.getInstance().deletePromotion(this);
-	}
+    /**
+     * Cancella promozione.
+     *
+     * @return true, if successful
+     */
+    public boolean cancellaPromozione() {
+	return PromotionsControl.getInstance().deletePromotion(this);
+    }
 
-	/**
-	 * Crea promozione.
-	 *
-	 * @return true, if successful
-	 */
-	public boolean creaPromozione() {
-		return PromotionsControl.getInstance().createPromotion(this);
-	}
+    /**
+     * Crea promozione.
+     *
+     * @return true, if successful
+     */
+    public boolean creaPromozione() {
+	return PromotionsControl.getInstance().createPromotion(this);
+    }
 
-	/**
-	 * Gets the event.
-	 *
-	 * @return event
-	 */
-	public Event getEvent() {
-		return event;
-	}
+    /**
+     * Gets the event.
+     *
+     * @return the event
+     */
+    public Event getEvent() {
+	return event;
+    }
 
-	/**
-	 * Gets the struttura.
-	 *
-	 * @return struttura
-	 */
-	public Struttura getStruttura() {
-		return struttura;
-	}
+    /**
+     * Gets the struttura.
+     *
+     * @return the struttura
+     */
+    public Struttura getStruttura() {
+	return struttura;
+    }
 
-	/**
-	 * Sets the event.
-	 *
-	 * @param event
-	 *            the new event
-	 */
-	public void setEvent(Event event) {
-		this.event = event;
-	}
+    /**
+     * Sets the event.
+     *
+     * @param event
+     *            the new event
+     */
+    public void setEvent(Event event) {
+	this.event = event;
+    }
 
-	/**
-	 * Sets the struttura.
-	 *
-	 * @param struttura
-	 *            the new struttura
-	 */
-	public void setStruttura(Struttura struttura) {
-		this.struttura = struttura;
-	}
+    /**
+     * Sets the struttura.
+     *
+     * @param struttura
+     *            the new struttura
+     */
+    public void setStruttura(Struttura struttura) {
+	this.struttura = struttura;
+    }
 }

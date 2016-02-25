@@ -1,6 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-	pageEncoding="UTF-8"
-%>
+	pageEncoding="UTF-8"%>
 <div class="col s6">
 	<div class="card ">
 		<div class="card-image">
@@ -16,7 +15,10 @@
 		<div class="card-action">
 			<div class="right">
 				<form method="get">
-					<button class="btn amber darken-4" type="submit" name="idStrut" value="01">Dettagli</button>
+					<button class="btn-floating amber darken-4" type="submit" name="idStrut"
+						value="01">
+						<i class="material-icons">info</i>
+					</button>
 				</form>
 			</div>
 			<div class="card-title">123,00€</div>

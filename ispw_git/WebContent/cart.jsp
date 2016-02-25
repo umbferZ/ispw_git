@@ -9,7 +9,7 @@
 		<div class="container ">
 			<div class="row">
 				<%
-					// TODO controllo se ci sono elementi nell carrello 
+					// TODO controllo se ci sono elementi nel carrello 
 					for (int i = 0; i < 10; i++) {
 				%>
 				<jsp:include page="includes/cardItemCart.jsp">

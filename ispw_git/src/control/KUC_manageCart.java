@@ -2,6 +2,8 @@ package control;
 
 import java.util.Date;
 
+import dao.CartDAO;
+import dao.StrutturaDAO;
 import entity.Cart;
 import entity.ItemCart;
 import entity.Periodo;
@@ -11,36 +13,45 @@ import entity.Struttura;
  * The Class KUC_manageCart.
  */
 public class KUC_manageCart {
+    private static KUC_manageCart istance;
 
-    private Cart cart; // TODO capire come ottenere il carrello... dall'utente
-    // attraverso la sessione? se si come lo passo
+    /**
+     * Gets the istance.
+     *
+     * @return the istance
+     */
+    public static KUC_manageCart getIstance(String idUser) {
+	if (istance == null)
+	    istance = new KUC_manageCart(idUser);
+	return istance;
+    }
+
+    private Cart cart;
 
     /**
      * Instantiates a new KU c_manage cart.
-     *
-     * @param cart
-     *            the cart
      */
-    public KUC_manageCart(Cart cart) {
-	this.cart = cart;
+    private KUC_manageCart(String idUser) {
+	cart = new CartDAO().find(idUser);
     }
 
     /**
      * Aggiungi al carrello.
      */
-    public void aggiungiAlCarrello() { // BeanStruttura
-	// TODO prendere una struttura attraverso un bean
-	// TODO prendere la data di checkin e checkout
-	// TODO prendere anche il carrello
-	Struttura struttura = new Struttura();
-	Date checkin = new Date();
-	Date checkout = new Date();
-	//
-	Periodo periodo = new Periodo(checkin, checkout);
+    public boolean aggiungiAlCarrello(String idUser, String idStruttura, String checkin, String checkout) {
+
+	Struttura struttura = new StrutturaDAO().find(idStruttura);
+	@SuppressWarnings("deprecation")
+	Date checkinDate = new Date(checkin);
+	@SuppressWarnings("deprecation")
+	Date checkoutDate = new Date(checkout);
+	Periodo periodo = new Periodo(checkinDate, checkoutDate);
 	if (struttura.isAvailable(periodo)) {
 	    ItemCart itemCart = new ItemCart(struttura, periodo);
 	    cart.addItem(itemCart);
+	    return true;
 	}
+	return false;
 
     }
 
@@ -61,12 +72,12 @@ public class KUC_manageCart {
      * @param index
      *            the index
      */
-    public void modificaItem(int index) {
-	// TODO prendere il carrello, il nuovo periodo e tutto quello che posso
-	// prendere attraverso i bean
-	Date checkin = new Date();
-	Date checkout = new Date();
-	Periodo periodo = new Periodo(checkin, checkout);
+    public void modificaItem(int index, String checkin, String checkout) {
+	@SuppressWarnings("deprecation")
+	Date checkinDate = new Date(checkin);
+	@SuppressWarnings("deprecation")
+	Date checkoutDate = new Date(checkout);
+	Periodo periodo = new Periodo(checkinDate, checkoutDate);
 	ItemCart itemCart = cart.getItem(index);
 	if (itemCart.getStruttura().isAvailable(periodo))
 	    itemCart.setPeriodo(periodo);

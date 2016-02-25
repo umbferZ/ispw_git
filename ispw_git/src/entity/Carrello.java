@@ -9,28 +9,28 @@ import entity.strutture.Struttura;
  */
 public class Carrello {
 
-	private int idUtente;
-	private ArrayList<Struttura> listaCarrello;
+    private int idUtente;
+    private ArrayList<Struttura> listaCarrello;
 
-	/**
-	 * Instantiates a new carrello.
-	 *
-	 * @param idUtente
-	 *            the id utente
-	 */
-	public Carrello(int idUtente) {
-		this.idUtente = idUtente;
-		listaCarrello = new ArrayList<>();
-	}
+    /**
+     * Instantiates a new carrello.
+     *
+     * @param idUtente
+     *            the id utente
+     */
+    public Carrello(int idUtente) {
+	this.idUtente = idUtente;
+	listaCarrello = new ArrayList<>();
+    }
 
-	/**
-	 * Adds the item.
-	 *
-	 * @param cartItem
-	 *            the cart item
-	 */
-	public void addItem(CartItem cartItem) {
-		// listaCarrello.add(cartItem);
-	}
+    /**
+     * Adds the item.
+     *
+     * @param cartItem
+     *            the cart item
+     */
+    public void addItem(CartItem cartItem) {
+	// listaCarrello.add(cartItem);
+    }
 
 }

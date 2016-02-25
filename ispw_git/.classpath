@@ -13,5 +13,6 @@
 			<attribute name="owner.project.facets" value="java"/>
 		</attributes>
 	</classpathentry>
+	<classpathentry kind="lib" path="/home/calliope/git/ispw_git/ispw_git/mysql-connector-java-5.1.38.zip"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>

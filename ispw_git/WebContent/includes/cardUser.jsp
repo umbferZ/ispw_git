@@ -3,15 +3,12 @@
 <jsp:useBean id="user" class="bean.BeanUser" scope="session" />
 <jsp:setProperty name="user" property="*" />
 <%
-	if (request.getParameter("logout") == "ok") {
+	if (request.getParameter("logout") != null) {
+		session.invalidate();
 %>
-<jsp:setProperty property="id" name="user" value="" />
-<jsp:setProperty property="nome" name="user" value="" />
-<jsp:setProperty property="cognome" name="user" value="" />
 <%
 	}
 %>
-
 <div class="s6 fixed-action-btn left">
 	<div class="card">
 		<%
@@ -21,7 +18,7 @@
 			<div class="card-title">Effettua l'accesso</div>
 		</div>
 		<div class="card-action">
-			<form method="post" name="login">
+			<form method="post" action="index.jsp">
 				<input type="hidden" name="id" value="1">
 				<div>
 					<div class="input-field">
@@ -38,7 +35,7 @@
 						<label class="active" for="cognome">Cognome</label>
 					</div>
 					<div class="input-field">
-						<button class="btn" type="submit">Accedi</button>
+						<button class="btn" type="submit" value="ok">Accedi</button>
 					</div>
 				</div>
 			</form>
@@ -48,14 +45,11 @@
 		%>
 		<div class="card-content">
 			ciao
-			<div class="card-title">${user.nome}</div>
+			<div class="card-title">${user.nome }</div>
 		</div>
 		<div class="card-action">
-			<form method="post" name="logout">
-				<input type="hidden" name="id" value="">
-				<input type="hidden" name="nome" value="">
-				<input type="hidden" name="cognome" value="">
-				<button class="btn amber darken-3" type="submit" name="logout" value="ok">Esci</button>
+			<form method="post" action="index.jsp">
+				<button class="btn amber darken-3" type="submit" name="logout">Esci</button>
 			</form>
 		</div>
 		<%

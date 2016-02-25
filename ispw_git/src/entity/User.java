@@ -4,14 +4,17 @@ package entity;
  * The Class User.
  */
 public class User {
+    private String nome;
+    private String cognome;
+    private Cart cart;
 
-	private Cart cart;
-
-	/**
-	 * Instantiates a new user.
-	 */
-	public User() {
-		cart = new Cart();
-	}
+    /**
+     * Instantiates a new user.
+     */
+    public User(String nome, String cognome) {
+	this.nome = nome;
+	this.cognome = cognome;
+	cart = new Cart();
+    }
 
 }
