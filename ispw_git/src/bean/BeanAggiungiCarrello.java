@@ -1,6 +1,6 @@
 package bean;
 
-import control.KUC_manageCart;
+import control.GestioneCarrelloControl;
 
 /**
  * The Class BeanItemCart.
@@ -12,8 +12,8 @@ public class BeanAggiungiCarrello {
     private String idUser;
 
     public boolean validate() {
-	KUC_manageCart kuc = KUC_manageCart.getIstance(this.idUser);
-	if (kuc.aggiungiAlCarrello(this.idUser, this.idStruttura, this.checkin, this.checkout))
+	GestioneCarrelloControl controller = GestioneCarrelloControl.getIstance(this.idUser);
+	if (controller.aggiungiAlCarrello(this.idStruttura, this.checkin, this.checkout))
 	    return true;
 	return false;
     }

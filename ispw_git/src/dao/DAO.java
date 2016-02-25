@@ -11,9 +11,20 @@ import java.sql.Statement;
  */
 public class DAO {
 
+    private static String DB_URL = "jdbc:mysql://localhost/JAVAcanze";
     private static String PASS = "JAVAcanze";
     private static String USER = "JAVAcanze";
-    private static String DB_URL = "jdbc:mysql://localhost/JAVAcanze";
+
+    /**
+     * The main method.
+     *
+     * @param args
+     *            the arguments
+     */
+    public static void main(String[] args) {
+	DAO dao = new DAO();
+	dao.query("SELECT * FROM user");
+    }
 
     /**
      * Query.
@@ -22,6 +33,7 @@ public class DAO {
      *            the sql
      * @return the result set
      */
+
     public final ResultSet query(String sql) {
 	// STEP 1: dichiarazioni
 	Statement stmt = null;
@@ -41,7 +53,6 @@ public class DAO {
 
 	    if (!rs.first()) // rs not empty
 		return null;
-
 	    rs.close();
 	    stmt.close();
 	    conn.close();
@@ -65,7 +76,6 @@ public class DAO {
 	    }
 	}
 	return rs;
-
     }
 
 }

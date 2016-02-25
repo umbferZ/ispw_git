@@ -6,9 +6,9 @@ import java.util.ArrayList;
  * The Class Struttura.
  */
 public class Struttura {
-    private String nome;
-    private String descrizione;
     private ArrayList<Periodo> bookingList;
+    private String descrizione;
+    private String nome;
 
     private Price price;
 

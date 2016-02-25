@@ -19,7 +19,7 @@ public class StrutturaDAO extends DAO {
      */
     public Struttura find(String idStruttura) {
 	Struttura struttura = null;
-	String sql = "SELECT * FROM strutture where idStruttura='" + idStruttura + "';";
+	String sql = "SELECT * FROM strutture WHERE idStruttura='" + idStruttura + "';";
 	ResultSet rs = this.query(sql);
 	String nome;
 	String descrizione;

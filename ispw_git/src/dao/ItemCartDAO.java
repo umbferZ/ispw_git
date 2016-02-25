@@ -22,7 +22,7 @@ public class ItemCartDAO extends DAO {
      */
     public ItemCart find(String idCart) {
 	ItemCart itemCart = null;
-	String sql = "SELECT * FROM itemCart where cart_idCart='" + idCart + "';";
+	String sql = "SELECT * FROM itemCart WHERE cart_idCart='" + idCart + "';";
 	ResultSet rs = this.query(sql);
 
 	try {

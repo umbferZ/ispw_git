@@ -20,7 +20,7 @@ public class CartDAO extends DAO {
      */
     public Cart find(String idUser) {
 	Cart cart = null;
-	String sql = "SELECT * FROM carrello where user_idUser='" + idUser + "';";
+	String sql = "SELECT * FROM carrello WHERE user_idUser='" + idUser + "';";
 	ResultSet rs = this.query(sql);
 	try {
 	    while (rs.next()) {
@@ -35,4 +35,5 @@ public class CartDAO extends DAO {
 	return cart;
 
     }
+
 }
