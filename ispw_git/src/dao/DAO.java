@@ -1,10 +1,16 @@
 package dao;
 
+import java.sql.Array;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.ArrayList;
+
+import javax.sql.rowset.CachedRowSet;
+
+import com.sun.rowset.CachedRowSetImpl;
 
 /**
  * The Class DAO.
@@ -23,7 +29,23 @@ public class DAO {
      */
     public static void main(String[] args) {
 	DAO dao = new DAO();
-	dao.query("SELECT * FROM user");
+	ResultSet rs = dao.query("SELECT * FROM user");
+
+	try {
+	    while (rs.next()) {
+		String s = "nome: " + rs.getString("nome");
+		s += " cognome: " + rs.getString("cognome");
+		s += " email: " + rs.getString("email");
+		s += " username: " + rs.getString("username");
+		s += " password: " + rs.getString("password");
+		System.out.println(s);
+	    }
+
+	} catch (SQLException e) {
+	    // TODO Auto-generated catch block
+	    e.printStackTrace();
+	}
+
     }
 
     /**
@@ -39,17 +61,18 @@ public class DAO {
 	Statement stmt = null;
 	Connection conn = null;
 	ResultSet rs = null;
+	CachedRowSet rowset = null;
 	try {
-	    // STEP 2: loading dinamico del driver mysql
 	    Class.forName("com.mysql.jdbc.Driver");
 
-	    // STEP 3: apertura connessione
 	    conn = DriverManager.getConnection(DB_URL, USER, PASS);
 
-	    // STEP 4: creazione ed esecuzione della query
 	    stmt = conn.createStatement();
 
 	    rs = stmt.executeQuery(sql);
+
+	    rowset = new CachedRowSetImpl();
+	    rowset.populate(rs);
 
 	    if (!rs.first()) // rs not empty
 		return null;
@@ -57,10 +80,14 @@ public class DAO {
 	    stmt.close();
 	    conn.close();
 	} catch (SQLException se) {
-	    // Errore durante l'apertura della connessione
+	    /*
+	     * Errore durante l'apertura della connessione
+	     */
 	    se.printStackTrace();
 	} catch (Exception e) {
-	    // Errore nel loading del driver
+	    /*
+	     * Errore nel loading del driver
+	     */
 	    e.printStackTrace();
 	} finally {
 	    try {
@@ -75,7 +102,7 @@ public class DAO {
 		se.printStackTrace();
 	    }
 	}
-	return rs;
+	return rowset;
     }
 
 }
